@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Created by COPASI version 4.24 (Build 197) on 2018-08-30 17:30 with libSBML version 5.17.0. -->
+<!-- Created by COPASI version 4.24 (Build 197) on 2018-10-15 16:51 with libSBML version 5.17.0. -->
 <sbml xmlns="http://www.sbml.org/sbml/level2/version4" level="2" version="4">
   <model metaid="COPASI0" id="Budding_yeast_size_control_by_increasing_SBF_concentration" name="Budding yeast size control by increasing SBF concentration">
     <notes>
@@ -158,11 +158,56 @@ The size of a cell sets the scale for all biochemical processes within it, there
           </lambda>
         </math>
       </functionDefinition>
-      <functionDefinition metaid="COPASI117" id="rInCdc" name="rInCdc">
+      <functionDefinition metaid="COPASI117" id="rAcCdc" name="rAcCdc">
         <annotation>
           <COPASI xmlns="http://www.copasi.org/static/sbml">
             <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
               <rdf:Description rdf:about="#COPASI117">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2018-03-14T17:22:49Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <lambda>
+            <bvar>
+              <ci> kAcCdcClb </ci>
+            </bvar>
+            <bvar>
+              <ci> CLB </ci>
+            </bvar>
+            <bvar>
+              <ci> Substrate </ci>
+            </bvar>
+            <bvar>
+              <ci> jCdc </ci>
+            </bvar>
+            <apply>
+              <times/>
+              <ci> kAcCdcClb </ci>
+              <ci> CLB </ci>
+              <apply>
+                <divide/>
+                <ci> Substrate </ci>
+                <apply>
+                  <plus/>
+                  <ci> jCdc </ci>
+                  <ci> Substrate </ci>
+                </apply>
+              </apply>
+            </apply>
+          </lambda>
+        </math>
+      </functionDefinition>
+      <functionDefinition metaid="COPASI118" id="rInCdc" name="rInCdc">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI118">
                 <dcterms:created>
                   <rdf:Description>
                     <dcterms:W3CDTF>2018-03-14T17:28:06Z</dcterms:W3CDTF>
@@ -199,11 +244,11 @@ The size of a cell sets the scale for all biochemical processes within it, there
           </lambda>
         </math>
       </functionDefinition>
-      <functionDefinition metaid="COPASI118" id="rAcCdh" name="rAcCdh">
+      <functionDefinition metaid="COPASI119" id="rAcCdh" name="rAcCdh">
         <annotation>
           <COPASI xmlns="http://www.copasi.org/static/sbml">
             <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-              <rdf:Description rdf:about="#COPASI118">
+              <rdf:Description rdf:about="#COPASI119">
                 <dcterms:created>
                   <rdf:Description>
                     <dcterms:W3CDTF>2018-03-14T17:31:19Z</dcterms:W3CDTF>
@@ -247,51 +292,6 @@ The size of a cell sets the scale for all biochemical processes within it, there
                 <apply>
                   <plus/>
                   <ci> jCdh </ci>
-                  <ci> Substrate </ci>
-                </apply>
-              </apply>
-            </apply>
-          </lambda>
-        </math>
-      </functionDefinition>
-      <functionDefinition metaid="COPASI119" id="rAcCdc" name="rAcCdc">
-        <annotation>
-          <COPASI xmlns="http://www.copasi.org/static/sbml">
-            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-              <rdf:Description rdf:about="#COPASI119">
-                <dcterms:created>
-                  <rdf:Description>
-                    <dcterms:W3CDTF>2018-03-14T17:22:49Z</dcterms:W3CDTF>
-                  </rdf:Description>
-                </dcterms:created>
-              </rdf:Description>
-            </rdf:RDF>
-          </COPASI>
-        </annotation>
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <lambda>
-            <bvar>
-              <ci> kAcCdcClb </ci>
-            </bvar>
-            <bvar>
-              <ci> CLB </ci>
-            </bvar>
-            <bvar>
-              <ci> Substrate </ci>
-            </bvar>
-            <bvar>
-              <ci> jCdc </ci>
-            </bvar>
-            <apply>
-              <times/>
-              <ci> kAcCdcClb </ci>
-              <ci> CLB </ci>
-              <apply>
-                <divide/>
-                <ci> Substrate </ci>
-                <apply>
-                  <plus/>
-                  <ci> jCdc </ci>
                   <ci> Substrate </ci>
                 </apply>
               </apply>
@@ -361,96 +361,11 @@ The size of a cell sets the scale for all biochemical processes within it, there
           </lambda>
         </math>
       </functionDefinition>
-      <functionDefinition metaid="COPASI121" id="Expression_of_size_independent_protein" name="Expression of size-independent protein">
+      <functionDefinition metaid="COPASI121" id="rSyClb" name="rSyClb">
         <annotation>
           <COPASI xmlns="http://www.copasi.org/static/sbml">
             <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
               <rdf:Description rdf:about="#COPASI121">
-                <dcterms:created>
-                  <rdf:Description>
-                    <dcterms:W3CDTF>2018-08-30T15:58:55Z</dcterms:W3CDTF>
-                  </rdf:Description>
-                </dcterms:created>
-              </rdf:Description>
-            </rdf:RDF>
-          </COPASI>
-        </annotation>
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <lambda>
-            <bvar>
-              <ci> kSy </ci>
-            </bvar>
-            <bvar>
-              <ci> GITM </ci>
-            </bvar>
-            <bvar>
-              <ci> GCN </ci>
-            </bvar>
-            <bvar>
-              <ci> GIt </ci>
-            </bvar>
-            <apply>
-              <times/>
-              <ci> kSy </ci>
-              <ci> GITM </ci>
-              <apply>
-                <divide/>
-                <ci> GCN </ci>
-                <ci> GIt </ci>
-              </apply>
-            </apply>
-          </lambda>
-        </math>
-      </functionDefinition>
-      <functionDefinition metaid="COPASI122" id="rDeClb" name="rDeClb">
-        <annotation>
-          <COPASI xmlns="http://www.copasi.org/static/sbml">
-            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-              <rdf:Description rdf:about="#COPASI122">
-                <dcterms:created>
-                  <rdf:Description>
-                    <dcterms:W3CDTF>2018-03-14T17:47:27Z</dcterms:W3CDTF>
-                  </rdf:Description>
-                </dcterms:created>
-              </rdf:Description>
-            </rdf:RDF>
-          </COPASI>
-        </annotation>
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <lambda>
-            <bvar>
-              <ci> kDeClb </ci>
-            </bvar>
-            <bvar>
-              <ci> kDeClbCdh </ci>
-            </bvar>
-            <bvar>
-              <ci> CDHa </ci>
-            </bvar>
-            <bvar>
-              <ci> Substrate </ci>
-            </bvar>
-            <apply>
-              <times/>
-              <apply>
-                <plus/>
-                <ci> kDeClb </ci>
-                <apply>
-                  <times/>
-                  <ci> kDeClbCdh </ci>
-                  <ci> CDHa </ci>
-                </apply>
-              </apply>
-              <ci> Substrate </ci>
-            </apply>
-          </lambda>
-        </math>
-      </functionDefinition>
-      <functionDefinition metaid="COPASI123" id="rSyClb" name="rSyClb">
-        <annotation>
-          <COPASI xmlns="http://www.copasi.org/static/sbml">
-            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-              <rdf:Description rdf:about="#COPASI123">
                 <dcterms:created>
                   <rdf:Description>
                     <dcterms:W3CDTF>2018-03-14T17:43:16Z</dcterms:W3CDTF>
@@ -512,11 +427,52 @@ The size of a cell sets the scale for all biochemical processes within it, there
           </lambda>
         </math>
       </functionDefinition>
-      <functionDefinition metaid="COPASI124" id="rSyCln" name="rSyCln">
+      <functionDefinition metaid="COPASI122" id="Expression_of_size_independent_protein" name="Expression of size-independent protein">
         <annotation>
           <COPASI xmlns="http://www.copasi.org/static/sbml">
             <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-              <rdf:Description rdf:about="#COPASI124">
+              <rdf:Description rdf:about="#COPASI122">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2018-08-30T15:58:55Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <lambda>
+            <bvar>
+              <ci> kSy </ci>
+            </bvar>
+            <bvar>
+              <ci> GITM </ci>
+            </bvar>
+            <bvar>
+              <ci> GCN </ci>
+            </bvar>
+            <bvar>
+              <ci> GIt </ci>
+            </bvar>
+            <apply>
+              <times/>
+              <ci> kSy </ci>
+              <ci> GITM </ci>
+              <apply>
+                <divide/>
+                <ci> GCN </ci>
+                <ci> GIt </ci>
+              </apply>
+            </apply>
+          </lambda>
+        </math>
+      </functionDefinition>
+      <functionDefinition metaid="COPASI123" id="rSyCln" name="rSyCln">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI123">
                 <dcterms:created>
                   <rdf:Description>
                     <dcterms:W3CDTF>2018-08-30T16:57:59Z</dcterms:W3CDTF>
@@ -568,6 +524,50 @@ The size of a cell sets the scale for all biochemical processes within it, there
                 </apply>
                 <ci> NSt </ci>
               </apply>
+            </apply>
+          </lambda>
+        </math>
+      </functionDefinition>
+      <functionDefinition metaid="COPASI124" id="rDeClb" name="rDeClb">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI124">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2018-03-14T17:47:27Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <lambda>
+            <bvar>
+              <ci> kDeClb </ci>
+            </bvar>
+            <bvar>
+              <ci> kDeClbCdh </ci>
+            </bvar>
+            <bvar>
+              <ci> CDHa </ci>
+            </bvar>
+            <bvar>
+              <ci> Substrate </ci>
+            </bvar>
+            <apply>
+              <times/>
+              <apply>
+                <plus/>
+                <ci> kDeClb </ci>
+                <apply>
+                  <times/>
+                  <ci> kDeClbCdh </ci>
+                  <ci> CDHa </ci>
+                </apply>
+              </apply>
+              <ci> Substrate </ci>
             </apply>
           </lambda>
         </math>
@@ -1085,6 +1085,11 @@ The size of a cell sets the scale for all biochemical processes within it, there
         </annotation>
       </species>
       <species metaid="COPASI23" id="NS" name="NS" compartment="tV" initialAmount="1" hasOnlySubstanceUnits="true" boundaryCondition="true" constant="false">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <pre>(AU)  number of free nuclear sites</pre>
+          </body>
+        </notes>
         <annotation>
           <COPASI xmlns="http://www.copasi.org/static/sbml">
             <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
@@ -1100,6 +1105,11 @@ The size of a cell sets the scale for all biochemical processes within it, there
         </annotation>
       </species>
       <species metaid="COPASI24" id="TMt" name="TMt" compartment="tV" initialAmount="30" hasOnlySubstanceUnits="true" boundaryCondition="true" constant="false">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <pre>(molecules) total amount of transcription machinery</pre>
+          </body>
+        </notes>
         <annotation>
           <COPASI xmlns="http://www.copasi.org/static/sbml">
             <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
@@ -1115,6 +1125,11 @@ The size of a cell sets the scale for all biochemical processes within it, there
         </annotation>
       </species>
       <species metaid="COPASI25" id="SBFt" name="SBFt" compartment="tV" initialAmount="0.28" hasOnlySubstanceUnits="true" boundaryCondition="true" constant="false">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <pre>(AU) total SBF</pre>
+          </body>
+        </notes>
         <annotation>
           <COPASI xmlns="http://www.copasi.org/static/sbml">
             <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
@@ -1130,6 +1145,11 @@ The size of a cell sets the scale for all biochemical processes within it, there
         </annotation>
       </species>
       <species metaid="COPASI26" id="WHIt" name="WHIt" compartment="tV" initialAmount="0.62" hasOnlySubstanceUnits="true" boundaryCondition="true" constant="false">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <pre>(AU) total Whi5</pre>
+          </body>
+        </notes>
         <annotation>
           <COPASI xmlns="http://www.copasi.org/static/sbml">
             <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
@@ -2177,15 +2197,6 @@ The size of a cell sets the scale for all biochemical processes within it, there
           </apply>
         </math>
       </assignmentRule>
-      <assignmentRule variable="GI">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <minus/>
-            <ci> GIt </ci>
-            <ci> GITM </ci>
-          </apply>
-        </math>
-      </assignmentRule>
       <assignmentRule variable="GD">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
@@ -2195,38 +2206,12 @@ The size of a cell sets the scale for all biochemical processes within it, there
           </apply>
         </math>
       </assignmentRule>
-      <assignmentRule variable="TMt">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <apply>
-              <plus/>
-              <apply>
-                <divide/>
-                <ci> TM </ci>
-                <ci> tV </ci>
-              </apply>
-              <apply>
-                <divide/>
-                <ci> GITM </ci>
-                <ci> tV </ci>
-              </apply>
-              <apply>
-                <divide/>
-                <ci> GDTM </ci>
-                <ci> tV </ci>
-              </apply>
-            </apply>
-            <ci> tV </ci>
-          </apply>
-        </math>
-      </assignmentRule>
-      <assignmentRule variable="NS">
+      <assignmentRule variable="GI">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
             <minus/>
-            <ci> NSt </ci>
-            <ci> NSSBF </ci>
+            <ci> GIt </ci>
+            <ci> GITM </ci>
           </apply>
         </math>
       </assignmentRule>
@@ -2249,6 +2234,32 @@ The size of a cell sets the scale for all biochemical processes within it, there
               <apply>
                 <divide/>
                 <ci> WHISBF </ci>
+                <ci> tV </ci>
+              </apply>
+            </apply>
+            <ci> tV </ci>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="TMt">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <times/>
+            <apply>
+              <plus/>
+              <apply>
+                <divide/>
+                <ci> TM </ci>
+                <ci> tV </ci>
+              </apply>
+              <apply>
+                <divide/>
+                <ci> GITM </ci>
+                <ci> tV </ci>
+              </apply>
+              <apply>
+                <divide/>
+                <ci> GDTM </ci>
                 <ci> tV </ci>
               </apply>
             </apply>
@@ -2287,6 +2298,24 @@ The size of a cell sets the scale for all biochemical processes within it, there
           </apply>
         </math>
       </assignmentRule>
+      <assignmentRule variable="NS">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <minus/>
+            <ci> NSt </ci>
+            <ci> NSSBF </ci>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="kSyCdh">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <times/>
+            <cn> 1 </cn>
+            <ci> kSyVo </ci>
+          </apply>
+        </math>
+      </assignmentRule>
       <assignmentRule variable="kSyCdc">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
@@ -2302,15 +2331,6 @@ The size of a cell sets the scale for all biochemical processes within it, there
             <divide/>
             <ci> dV </ci>
             <ci> tV </ci>
-          </apply>
-        </math>
-      </assignmentRule>
-      <assignmentRule variable="kSyCdh">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <cn> 1 </cn>
-            <ci> kSyVo </ci>
           </apply>
         </math>
       </assignmentRule>

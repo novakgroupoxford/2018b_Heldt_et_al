@@ -95,7 +95,7 @@ kDpWhi      = 1     %1/min  dephosphorylation of Whi5
 
 kAsWhiSbf  = 1      %AV/(AU*min)  association of Whi5 and SBF
 kAsCln3Whi = 100    %AV/(AU*min)  association of Whi5 and Cln3
-kDsCln3Whi = 0.1    %1/min  dissociation of Cln3:Whi5 compelexes
+kDsCln3Whi = 0.1    %1/min  dissociation of Cln3:Whi5 complexes
 
 kPhSbfClb = 5       %AV/(AU*min)  Clb1/2-dependent SBF phosphorylation
 kDpSbf    = 0.2     %1/min  SBF dephosphorylation

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- generated with COPASI 4.24 (Build 197) (http://www.copasi.org) at 2018-08-30 10:39:00 UTC -->
+<!-- generated with COPASI 4.24 (Build 197) (http://www.copasi.org) at 2018-10-15 14:48:54 UTC -->
 <?oxygen RNGSchema="http://www.copasi.org/static/schema/CopasiML.rng" type="xml"?>
 <COPASI xmlns="http://www.copasi.org/static/schema" versionMajor="4" versionMinor="24" versionDevel="197" copasiSourcesModified="0">
   <ListOfFunctions>
@@ -1684,9 +1684,9 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           <Modifier metabolite="Metabolite_4" stoichiometry="1"/>
         </ListOfModifiers>
         <ListOfConstants>
-          <Constant key="Parameter_5064" name="kSy" value="2.1"/>
-          <Constant key="Parameter_5063" name="GCN" value="1"/>
-          <Constant key="Parameter_5062" name="GDt" value="500"/>
+          <Constant key="Parameter_5013" name="kSy" value="2.1"/>
+          <Constant key="Parameter_5012" name="GCN" value="1"/>
+          <Constant key="Parameter_5011" name="GDt" value="500"/>
         </ListOfConstants>
         <KineticLaw function="Function_40" unitType="Default" scalingCompartment="CN=Root,Model=Budding yeast size control by inhibitor dilution,Vector=Compartments[tV]">
           <ListOfCallParameters>
@@ -1725,8 +1725,8 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           <Product metabolite="Metabolite_3" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_5061" name="k1" value="10"/>
-          <Constant key="Parameter_5060" name="k2" value="0.1"/>
+          <Constant key="Parameter_5010" name="k1" value="10"/>
+          <Constant key="Parameter_5009" name="k2" value="0.1"/>
         </ListOfConstants>
         <KineticLaw function="Function_14" unitType="Default" scalingCompartment="CN=Root,Model=Budding yeast size control by inhibitor dilution,Vector=Compartments[tV]">
           <ListOfCallParameters>
@@ -1766,8 +1766,8 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           <Product metabolite="Metabolite_4" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_5059" name="k1" value="1"/>
-          <Constant key="Parameter_5058" name="k2" value="1"/>
+          <Constant key="Parameter_5008" name="k1" value="1"/>
+          <Constant key="Parameter_5007" name="k2" value="1"/>
         </ListOfConstants>
         <KineticLaw function="Function_14" unitType="Default" scalingCompartment="CN=Root,Model=Budding yeast size control by inhibitor dilution,Vector=Compartments[tV]">
           <ListOfCallParameters>
@@ -1806,9 +1806,9 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           <Modifier metabolite="Metabolite_4" stoichiometry="1"/>
         </ListOfModifiers>
         <ListOfConstants>
-          <Constant key="Parameter_5057" name="kSy" value="10"/>
-          <Constant key="Parameter_5056" name="GCN" value="1"/>
-          <Constant key="Parameter_5055" name="GDt" value="500"/>
+          <Constant key="Parameter_5006" name="kSy" value="10"/>
+          <Constant key="Parameter_5005" name="GCN" value="1"/>
+          <Constant key="Parameter_5004" name="GDt" value="500"/>
         </ListOfConstants>
         <KineticLaw function="Function_40" unitType="Default" scalingCompartment="CN=Root,Model=Budding yeast size control by inhibitor dilution,Vector=Compartments[tV]">
           <ListOfCallParameters>
@@ -1843,7 +1843,7 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           <Substrate metabolite="Metabolite_5" stoichiometry="1"/>
         </ListOfSubstrates>
         <ListOfConstants>
-          <Constant key="Parameter_5054" name="k1" value="1"/>
+          <Constant key="Parameter_5003" name="k1" value="1"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Budding yeast size control by inhibitor dilution,Vector=Compartments[tV]">
           <ListOfCallParameters>
@@ -1876,8 +1876,8 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           <Product metabolite="Metabolite_9" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_5053" name="k1" value="100"/>
-          <Constant key="Parameter_5052" name="k2" value="0.01"/>
+          <Constant key="Parameter_5002" name="k1" value="100"/>
+          <Constant key="Parameter_5001" name="k2" value="0.01"/>
         </ListOfConstants>
         <KineticLaw function="Function_14" unitType="Default" scalingCompartment="CN=Root,Model=Budding yeast size control by inhibitor dilution,Vector=Compartments[tV]">
           <ListOfCallParameters>
@@ -1917,9 +1917,9 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           <Modifier metabolite="Metabolite_4" stoichiometry="1"/>
         </ListOfModifiers>
         <ListOfConstants>
-          <Constant key="Parameter_5051" name="kSy" value="0.042"/>
-          <Constant key="Parameter_5050" name="GCN" value="1"/>
-          <Constant key="Parameter_5049" name="GDt" value="500"/>
+          <Constant key="Parameter_5000" name="kSy" value="0.042"/>
+          <Constant key="Parameter_4999" name="GCN" value="1"/>
+          <Constant key="Parameter_4998" name="GDt" value="500"/>
         </ListOfConstants>
         <KineticLaw function="Function_40" unitType="Default" scalingCompartment="CN=Root,Model=Budding yeast size control by inhibitor dilution,Vector=Compartments[tV]">
           <ListOfCallParameters>
@@ -1960,7 +1960,7 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           <Modifier metabolite="Metabolite_16" stoichiometry="1"/>
         </ListOfModifiers>
         <ListOfConstants>
-          <Constant key="Parameter_5048" name="kPhSbfClb" value="5"/>
+          <Constant key="Parameter_4997" name="kPhSbfClb" value="5"/>
         </ListOfConstants>
         <KineticLaw function="Function_42" unitType="Default" scalingCompartment="CN=Root,Model=Budding yeast size control by inhibitor dilution,Vector=Compartments[tV]">
           <ListOfCallParameters>
@@ -1995,7 +1995,7 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           <Product metabolite="Metabolite_13" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_5047" name="k1" value="0.2"/>
+          <Constant key="Parameter_4996" name="k1" value="0.2"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Budding yeast size control by inhibitor dilution,Vector=Compartments[tV]">
           <ListOfCallParameters>
@@ -2030,9 +2030,9 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           <Modifier metabolite="Metabolite_13" stoichiometry="1"/>
         </ListOfModifiers>
         <ListOfConstants>
-          <Constant key="Parameter_5046" name="kSyCln" value="8"/>
-          <Constant key="Parameter_5045" name="GCN" value="1"/>
-          <Constant key="Parameter_5044" name="GDt" value="500"/>
+          <Constant key="Parameter_4995" name="kSyCln" value="8"/>
+          <Constant key="Parameter_4994" name="GCN" value="1"/>
+          <Constant key="Parameter_4993" name="GDt" value="500"/>
         </ListOfConstants>
         <KineticLaw function="Function_41" unitType="Default" scalingCompartment="CN=Root,Model=Budding yeast size control by inhibitor dilution,Vector=Compartments[tV]">
           <ListOfCallParameters>
@@ -2076,7 +2076,7 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           <Substrate metabolite="Metabolite_15" stoichiometry="1"/>
         </ListOfSubstrates>
         <ListOfConstants>
-          <Constant key="Parameter_5043" name="k1" value="1"/>
+          <Constant key="Parameter_4992" name="k1" value="1"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Budding yeast size control by inhibitor dilution,Vector=Compartments[tV]">
           <ListOfCallParameters>
@@ -2113,9 +2113,9 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           <Modifier metabolite="Metabolite_16" stoichiometry="1"/>
         </ListOfModifiers>
         <ListOfConstants>
-          <Constant key="Parameter_5042" name="kPhWhiCln3" value="0.3"/>
-          <Constant key="Parameter_5041" name="kPhWhiCln" value="4"/>
-          <Constant key="Parameter_5040" name="kPhWhiClb" value="20"/>
+          <Constant key="Parameter_4991" name="kPhWhiCln3" value="0.3"/>
+          <Constant key="Parameter_4990" name="kPhWhiCln" value="4"/>
+          <Constant key="Parameter_4989" name="kPhWhiClb" value="20"/>
         </ListOfConstants>
         <KineticLaw function="Function_43" unitType="Default" scalingCompartment="CN=Root,Model=Budding yeast size control by inhibitor dilution,Vector=Compartments[tV]">
           <ListOfCallParameters>
@@ -2168,9 +2168,9 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           <Modifier metabolite="Metabolite_16" stoichiometry="1"/>
         </ListOfModifiers>
         <ListOfConstants>
-          <Constant key="Parameter_5039" name="kPhWhiCln3" value="0.3"/>
-          <Constant key="Parameter_5038" name="kPhWhiCln" value="4"/>
-          <Constant key="Parameter_5037" name="kPhWhiClb" value="20"/>
+          <Constant key="Parameter_4988" name="kPhWhiCln3" value="0.3"/>
+          <Constant key="Parameter_4987" name="kPhWhiCln" value="4"/>
+          <Constant key="Parameter_4986" name="kPhWhiClb" value="20"/>
         </ListOfConstants>
         <KineticLaw function="Function_43" unitType="Default" scalingCompartment="CN=Root,Model=Budding yeast size control by inhibitor dilution,Vector=Compartments[tV]">
           <ListOfCallParameters>
@@ -2217,7 +2217,7 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           <Product metabolite="Metabolite_6" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_5036" name="k1" value="1"/>
+          <Constant key="Parameter_4985" name="k1" value="1"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Budding yeast size control by inhibitor dilution,Vector=Compartments[tV]">
           <ListOfCallParameters>
@@ -2249,9 +2249,9 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           <Modifier metabolite="Metabolite_4" stoichiometry="1"/>
         </ListOfModifiers>
         <ListOfConstants>
-          <Constant key="Parameter_5035" name="kSy" value="0.042"/>
-          <Constant key="Parameter_5034" name="GCN" value="1"/>
-          <Constant key="Parameter_5033" name="GDt" value="500"/>
+          <Constant key="Parameter_4984" name="kSy" value="0.042"/>
+          <Constant key="Parameter_4983" name="GCN" value="1"/>
+          <Constant key="Parameter_4982" name="GDt" value="500"/>
         </ListOfConstants>
         <KineticLaw function="Function_40" unitType="Default" scalingCompartment="CN=Root,Model=Budding yeast size control by inhibitor dilution,Vector=Compartments[tV]">
           <ListOfCallParameters>
@@ -2289,9 +2289,9 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           <Modifier metabolite="Metabolite_4" stoichiometry="1"/>
         </ListOfModifiers>
         <ListOfConstants>
-          <Constant key="Parameter_5032" name="kSy" value="0.042"/>
-          <Constant key="Parameter_5031" name="GCN" value="1"/>
-          <Constant key="Parameter_5030" name="GDt" value="500"/>
+          <Constant key="Parameter_4981" name="kSy" value="0.042"/>
+          <Constant key="Parameter_4980" name="GCN" value="1"/>
+          <Constant key="Parameter_4979" name="GDt" value="500"/>
         </ListOfConstants>
         <KineticLaw function="Function_40" unitType="Default" scalingCompartment="CN=Root,Model=Budding yeast size control by inhibitor dilution,Vector=Compartments[tV]">
           <ListOfCallParameters>
@@ -2332,8 +2332,8 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           <Modifier metabolite="Metabolite_16" stoichiometry="1"/>
         </ListOfModifiers>
         <ListOfConstants>
-          <Constant key="Parameter_5029" name="kAcCdcClb" value="0.5"/>
-          <Constant key="Parameter_5028" name="jCdc" value="0.001"/>
+          <Constant key="Parameter_4978" name="kAcCdcClb" value="0.5"/>
+          <Constant key="Parameter_4977" name="jCdc" value="0.001"/>
         </ListOfConstants>
         <KineticLaw function="Function_44" unitType="Default" scalingCompartment="CN=Root,Model=Budding yeast size control by inhibitor dilution,Vector=Compartments[tV]">
           <ListOfCallParameters>
@@ -2371,8 +2371,8 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           <Product metabolite="Metabolite_20" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_5027" name="kInCdc" value="0.25"/>
-          <Constant key="Parameter_5026" name="jCdc" value="0.001"/>
+          <Constant key="Parameter_4976" name="kInCdc" value="0.25"/>
+          <Constant key="Parameter_4975" name="jCdc" value="0.001"/>
         </ListOfConstants>
         <KineticLaw function="Function_45" unitType="Default" scalingCompartment="CN=Root,Model=Budding yeast size control by inhibitor dilution,Vector=Compartments[tV]">
           <ListOfCallParameters>
@@ -2410,9 +2410,9 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           <Modifier metabolite="Metabolite_19" stoichiometry="1"/>
         </ListOfModifiers>
         <ListOfConstants>
-          <Constant key="Parameter_5025" name="kAcCdh" value="0.01"/>
-          <Constant key="Parameter_5024" name="kAcCdhCdc" value="2"/>
-          <Constant key="Parameter_5023" name="jCdh" value="0.001"/>
+          <Constant key="Parameter_4974" name="kAcCdh" value="0.01"/>
+          <Constant key="Parameter_4973" name="kAcCdhCdc" value="2"/>
+          <Constant key="Parameter_4972" name="jCdh" value="0.001"/>
         </ListOfConstants>
         <KineticLaw function="Function_46" unitType="Default" scalingCompartment="CN=Root,Model=Budding yeast size control by inhibitor dilution,Vector=Compartments[tV]">
           <ListOfCallParameters>
@@ -2457,9 +2457,9 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           <Modifier metabolite="Metabolite_16" stoichiometry="1"/>
         </ListOfModifiers>
         <ListOfConstants>
-          <Constant key="Parameter_5022" name="kInCdhCln" value="0.125"/>
-          <Constant key="Parameter_5021" name="kInCdhClb" value="2"/>
-          <Constant key="Parameter_5020" name="jCdh" value="0.001"/>
+          <Constant key="Parameter_4971" name="kInCdhCln" value="0.125"/>
+          <Constant key="Parameter_4970" name="kInCdhClb" value="2"/>
+          <Constant key="Parameter_4969" name="jCdh" value="0.001"/>
         </ListOfConstants>
         <KineticLaw function="Function_47" unitType="Default" scalingCompartment="CN=Root,Model=Budding yeast size control by inhibitor dilution,Vector=Compartments[tV]">
           <ListOfCallParameters>
@@ -2504,11 +2504,11 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           <Modifier metabolite="Metabolite_4" stoichiometry="1"/>
         </ListOfModifiers>
         <ListOfConstants>
-          <Constant key="Parameter_5019" name="kSyClb" value="0.01"/>
-          <Constant key="Parameter_5018" name="kSyClbClb" value="0.3"/>
-          <Constant key="Parameter_5017" name="jSyClb" value="0.3"/>
-          <Constant key="Parameter_5016" name="GCN" value="1"/>
-          <Constant key="Parameter_5015" name="GDt" value="500"/>
+          <Constant key="Parameter_4968" name="kSyClb" value="0.01"/>
+          <Constant key="Parameter_4967" name="kSyClbClb" value="0.3"/>
+          <Constant key="Parameter_4966" name="jSyClb" value="0.3"/>
+          <Constant key="Parameter_4965" name="GCN" value="1"/>
+          <Constant key="Parameter_4964" name="GDt" value="500"/>
         </ListOfConstants>
         <KineticLaw function="Function_48" unitType="Default" scalingCompartment="CN=Root,Model=Budding yeast size control by inhibitor dilution,Vector=Compartments[tV]">
           <ListOfCallParameters>
@@ -2555,8 +2555,8 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           <Modifier metabolite="Metabolite_17" stoichiometry="1"/>
         </ListOfModifiers>
         <ListOfConstants>
-          <Constant key="Parameter_5014" name="kDeClb" value="0.01"/>
-          <Constant key="Parameter_5013" name="kDeClbCdh" value="2"/>
+          <Constant key="Parameter_4963" name="kDeClb" value="0.01"/>
+          <Constant key="Parameter_4962" name="kDeClbCdh" value="2"/>
         </ListOfConstants>
         <KineticLaw function="Function_49" unitType="Default" scalingCompartment="CN=Root,Model=Budding yeast size control by inhibitor dilution,Vector=Compartments[tV]">
           <ListOfCallParameters>
@@ -2594,10 +2594,10 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           <Modifier metabolite="Metabolite_3" stoichiometry="1"/>
         </ListOfModifiers>
         <ListOfConstants>
-          <Constant key="Parameter_5012" name="GRd" value="0"/>
-          <Constant key="Parameter_5011" name="kSyWhi" value="0.016"/>
-          <Constant key="Parameter_5010" name="GWt" value="1"/>
-          <Constant key="Parameter_5009" name="GIt" value="1"/>
+          <Constant key="Parameter_4961" name="GRd" value="0"/>
+          <Constant key="Parameter_4960" name="kSyWhi" value="0.016"/>
+          <Constant key="Parameter_4959" name="GWt" value="1"/>
+          <Constant key="Parameter_4958" name="GIt" value="1"/>
         </ListOfConstants>
         <KineticLaw function="Function_50" unitType="Default" scalingCompartment="CN=Root,Model=Budding yeast size control by inhibitor dilution,Vector=Compartments[tV]">
           <ListOfCallParameters>
@@ -3929,45 +3929,11 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
       </Expression>
     </UnitDefinition>
     <UnitDefinition key="Unit_43" name="Arbitrary volume" symbol="AV">
-      <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#Unit_43">
-    <dcterms:created>
-      <rdf:Description>
-        <dcterms:W3CDTF>2018-08-30T11:38:38Z</dcterms:W3CDTF>
-      </rdf:Description>
-    </dcterms:created>
-  </rdf:Description>
-</rdf:RDF>
-
-      </MiriamAnnotation>
-      <Comment>
-        Arbitrary units of cell volume
-      </Comment>
       <Expression>
         fl/12.5
       </Expression>
     </UnitDefinition>
     <UnitDefinition key="Unit_44" name="Arbitrary units" symbol="AU">
-      <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#Unit_44">
-    <dcterms:created>
-      <rdf:Description>
-        <dcterms:W3CDTF>2018-08-30T11:38:12Z</dcterms:W3CDTF>
-      </rdf:Description>
-    </dcterms:created>
-  </rdf:Description>
-</rdf:RDF>
-
-      </MiriamAnnotation>
-      <Comment>
-        Arbitrary units of number of molecules
-      </Comment>
       <Expression>
         #/100
       </Expression>
