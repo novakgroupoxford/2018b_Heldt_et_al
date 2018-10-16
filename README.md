@@ -5,10 +5,10 @@ Custom code for the article: <br>
 Frank S. Heldt, Reece Lunstone, John J. Tyson, Bela Novak <br>
 Plos Computational Biology
 
-This repository contains different versions of the mathematical models used in the article.
-\*.txt files: Model files for the Systems Biology Toolbox 2 (now known as IQM Tools, http://www.intiquan.com/iqm-tools/) for MatLab. These files were used to obtain all simulation results in the article.
-\*.cps files: Model files for Copasi (http://copasi.org/) that reproduce selected figures from the article. These files were used to generate the SBML files of the models.
-\*.xml files: Model files in the Systems Biology Markup Language (http://sbml.org), level 2 version 4. These files were created from the Copasi version of the models.
+This repository contains different versions of the mathematical models used in the article.<br>
+\*.txt files: Model files for the Systems Biology Toolbox 2 (now known as IQM Tools, http://www.intiquan.com/iqm-tools/) for MatLab. These files were used to obtain all simulation results in the article.<br>
+\*.cps files: Model files for Copasi (http://copasi.org/) that reproduce selected figures from the article. These files were used to generate the SBML files of the models.<br>
+\*.xml files: Model files in the Systems Biology Markup Language (http://sbml.org), level 2 version 4. These files were created from the Copasi version of the models.<br>
 
 - **Heldt2018_YeastSizeControl_GeneExpression**: General model for the expression of size-dependent and size-independent proteins in a growing cell (see Figs. 1 and S1 in the article).
 - **Heldt2018_YeastSizeControl_InhibitorDilution**: Inhibitor-dilution model for budding yeast size control (see Figs. 2, 3, S2, and S3 in the article).
