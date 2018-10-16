@@ -6,7 +6,7 @@ Frank S. Heldt, Reece Lunstone, John J. Tyson, Bela Novak <br>
 Plos Computational Biology
 
 This repository contains different versions of the mathematical models used in the article.<br>
-\*.txt files: Model files for the Systems Biology Toolbox 2 (now known as IQM Tools, http://www.intiquan.com/iqm-tools/) for MatLab. These files were used to obtain all simulation results in the article.<br>
+\*.txt files: Model files for the Systems Biology Toolbox 2 (now known as IQR Tools, https://iqrtools.intiquan.com/) for MatLab. These files were used to obtain all simulation results in the article.<br>
 \*.cps files: Model files for Copasi (http://copasi.org/) that reproduce selected figures from the article. These files were used to generate the SBML files of the models.<br>
 \*.xml files: Model files in the Systems Biology Markup Language (http://sbml.org), level 2 version 4. These files were created from the Copasi version of the models.<br>
 
