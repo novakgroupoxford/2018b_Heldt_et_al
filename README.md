@@ -3,7 +3,7 @@
 Custom code for the article: <br>
 "Dilution and titration of cell-cycle regulators may control cell size in budding yeast" <br>
 Frank S. Heldt, Reece Lunstone, John J. Tyson, Bela Novak <br>
-Plos Computational Biology
+PLoS Comput Biol, October 2018, 14(10), e1006548, doi: 10.1371/journal.pcbi.1006548 <br>
 
 This repository contains different versions of the mathematical models used in the article.<br>
 \*.txt files: Model files for the Systems Biology Toolbox 2 (now known as IQR Tools, https://iqrtools.intiquan.com/) for MatLab. These files were used to obtain all simulation results in the article.<br>

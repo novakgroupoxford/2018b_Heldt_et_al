@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- generated with COPASI 4.20 (Build 158) (http://www.copasi.org) at 2018-04-05 13:47:14 UTC -->
+<!-- generated with COPASI 4.24 (Build 197) (http://www.copasi.org) at 2018-10-24 10:50:59 UTC -->
 <?oxygen RNGSchema="http://www.copasi.org/static/schema/CopasiML.rng" type="xml"?>
-<COPASI xmlns="http://www.copasi.org/static/schema" versionMajor="4" versionMinor="20" versionDevel="158" copasiSourcesModified="0">
+<COPASI xmlns="http://www.copasi.org/static/schema" versionMajor="4" versionMinor="24" versionDevel="197" copasiSourcesModified="0">
   <ListOfFunctions>
     <Function key="Function_13" name="Mass action (irreversible)" type="MassAction" reversible="false">
       <MiriamAnnotation>
@@ -23,8 +23,8 @@ Reaction scheme where the products are created from the reactants and the change
         k1*PRODUCT&lt;substrate_i>
       </Expression>
       <ListOfParameterDescriptions>
-        <ParameterDescription key="FunctionParameter_81" name="k1" order="0" role="constant"/>
-        <ParameterDescription key="FunctionParameter_79" name="substrate" order="1" role="substrate"/>
+        <ParameterDescription key="FunctionParameter_80" name="k1" order="0" role="constant"/>
+        <ParameterDescription key="FunctionParameter_81" name="substrate" order="1" role="substrate"/>
       </ListOfParameterDescriptions>
     </Function>
     <Function key="Function_14" name="Mass action (reversible)" type="MassAction" reversible="true">
@@ -47,10 +47,10 @@ Reaction scheme where the products are created from the reactants and the change
         k1*PRODUCT&lt;substrate_i>-k2*PRODUCT&lt;product_j>
       </Expression>
       <ListOfParameterDescriptions>
-        <ParameterDescription key="FunctionParameter_62" name="k1" order="0" role="constant"/>
-        <ParameterDescription key="FunctionParameter_39" name="substrate" order="1" role="substrate"/>
-        <ParameterDescription key="FunctionParameter_67" name="k2" order="2" role="constant"/>
-        <ParameterDescription key="FunctionParameter_71" name="product" order="3" role="product"/>
+        <ParameterDescription key="FunctionParameter_69" name="k1" order="0" role="constant"/>
+        <ParameterDescription key="FunctionParameter_68" name="substrate" order="1" role="substrate"/>
+        <ParameterDescription key="FunctionParameter_78" name="k2" order="2" role="constant"/>
+        <ParameterDescription key="FunctionParameter_79" name="product" order="3" role="product"/>
       </ListOfParameterDescriptions>
     </Function>
     <Function key="Function_40" name="Expression of size-dependent gene" type="UserDefined" reversible="unspecified">
@@ -70,9 +70,9 @@ Reaction scheme where the products are created from the reactants and the change
       </Expression>
       <ListOfParameterDescriptions>
         <ParameterDescription key="FunctionParameter_264" name="kSy" order="0" role="constant"/>
-        <ParameterDescription key="FunctionParameter_254" name="GDTM" order="1" role="modifier"/>
-        <ParameterDescription key="FunctionParameter_258" name="GCN" order="2" role="constant"/>
-        <ParameterDescription key="FunctionParameter_266" name="GDt" order="3" role="constant"/>
+        <ParameterDescription key="FunctionParameter_263" name="GDTM" order="1" role="modifier"/>
+        <ParameterDescription key="FunctionParameter_262" name="GCN" order="2" role="constant"/>
+        <ParameterDescription key="FunctionParameter_261" name="GDt" order="3" role="constant"/>
       </ListOfParameterDescriptions>
     </Function>
     <Function key="Function_41" name="rSyCln" type="UserDefined" reversible="unspecified">
@@ -92,12 +92,12 @@ Reaction scheme where the products are created from the reactants and the change
       </Expression>
       <ListOfParameterDescriptions>
         <ParameterDescription key="FunctionParameter_267" name="kSyCln" order="0" role="constant"/>
-        <ParameterDescription key="FunctionParameter_246" name="GDTM" order="1" role="modifier"/>
-        <ParameterDescription key="FunctionParameter_268" name="GCN" order="2" role="constant"/>
-        <ParameterDescription key="FunctionParameter_270" name="GDt" order="3" role="constant"/>
-        <ParameterDescription key="FunctionParameter_272" name="SBF" order="4" role="modifier"/>
-        <ParameterDescription key="FunctionParameter_274" name="SBFt" order="5" role="modifier"/>
-        <ParameterDescription key="FunctionParameter_276" name="SBFu" order="6" role="modifier"/>
+        <ParameterDescription key="FunctionParameter_266" name="GDTM" order="1" role="modifier"/>
+        <ParameterDescription key="FunctionParameter_265" name="GCN" order="2" role="constant"/>
+        <ParameterDescription key="FunctionParameter_250" name="GDt" order="3" role="constant"/>
+        <ParameterDescription key="FunctionParameter_268" name="SBF" order="4" role="modifier"/>
+        <ParameterDescription key="FunctionParameter_269" name="SBFt" order="5" role="modifier"/>
+        <ParameterDescription key="FunctionParameter_270" name="SBFu" order="6" role="modifier"/>
       </ListOfParameterDescriptions>
     </Function>
     <Function key="Function_42" name="rPhSbf" type="UserDefined" reversible="unspecified">
@@ -117,8 +117,8 @@ Reaction scheme where the products are created from the reactants and the change
       </Expression>
       <ListOfParameterDescriptions>
         <ParameterDescription key="FunctionParameter_277" name="kPhSbfClb" order="0" role="constant"/>
-        <ParameterDescription key="FunctionParameter_273" name="CLB" order="1" role="modifier"/>
-        <ParameterDescription key="FunctionParameter_269" name="SBFu" order="2" role="substrate"/>
+        <ParameterDescription key="FunctionParameter_276" name="CLB" order="1" role="modifier"/>
+        <ParameterDescription key="FunctionParameter_275" name="SBFu" order="2" role="substrate"/>
       </ListOfParameterDescriptions>
     </Function>
     <Function key="Function_43" name="rPhWhi" type="UserDefined" reversible="unspecified">
@@ -137,9 +137,9 @@ Reaction scheme where the products are created from the reactants and the change
         kPhWhiCln*CLN*Substrate
       </Expression>
       <ListOfParameterDescriptions>
-        <ParameterDescription key="FunctionParameter_262" name="kPhWhiCln" order="0" role="constant"/>
-        <ParameterDescription key="FunctionParameter_275" name="CLN" order="1" role="modifier"/>
-        <ParameterDescription key="FunctionParameter_278" name="Substrate" order="2" role="substrate"/>
+        <ParameterDescription key="FunctionParameter_272" name="kPhWhiCln" order="0" role="constant"/>
+        <ParameterDescription key="FunctionParameter_273" name="CLN" order="1" role="modifier"/>
+        <ParameterDescription key="FunctionParameter_274" name="Substrate" order="2" role="substrate"/>
       </ListOfParameterDescriptions>
     </Function>
     <Function key="Function_44" name="rAcCdc" type="UserDefined" reversible="unspecified">
@@ -159,9 +159,9 @@ Reaction scheme where the products are created from the reactants and the change
       </Expression>
       <ListOfParameterDescriptions>
         <ParameterDescription key="FunctionParameter_279" name="kAcCdcClb" order="0" role="constant"/>
-        <ParameterDescription key="FunctionParameter_271" name="CLB" order="1" role="modifier"/>
-        <ParameterDescription key="FunctionParameter_281" name="Substrate" order="2" role="substrate"/>
-        <ParameterDescription key="FunctionParameter_283" name="jCdc" order="3" role="constant"/>
+        <ParameterDescription key="FunctionParameter_278" name="CLB" order="1" role="modifier"/>
+        <ParameterDescription key="FunctionParameter_271" name="Substrate" order="2" role="substrate"/>
+        <ParameterDescription key="FunctionParameter_280" name="jCdc" order="3" role="constant"/>
       </ListOfParameterDescriptions>
     </Function>
     <Function key="Function_45" name="rInCdc" type="UserDefined" reversible="unspecified">
@@ -181,8 +181,8 @@ Reaction scheme where the products are created from the reactants and the change
       </Expression>
       <ListOfParameterDescriptions>
         <ParameterDescription key="FunctionParameter_284" name="kInCdc" order="0" role="constant"/>
-        <ParameterDescription key="FunctionParameter_280" name="Substrate" order="1" role="substrate"/>
-        <ParameterDescription key="FunctionParameter_285" name="jCdc" order="2" role="constant"/>
+        <ParameterDescription key="FunctionParameter_283" name="Substrate" order="1" role="substrate"/>
+        <ParameterDescription key="FunctionParameter_282" name="jCdc" order="2" role="constant"/>
       </ListOfParameterDescriptions>
     </Function>
     <Function key="Function_46" name="rAcCdh" type="UserDefined" reversible="unspecified">
@@ -202,10 +202,10 @@ Reaction scheme where the products are created from the reactants and the change
       </Expression>
       <ListOfParameterDescriptions>
         <ParameterDescription key="FunctionParameter_286" name="kAcCdh" order="0" role="constant"/>
-        <ParameterDescription key="FunctionParameter_282" name="kAcCdhCdc" order="1" role="constant"/>
-        <ParameterDescription key="FunctionParameter_288" name="CDCa" order="2" role="modifier"/>
-        <ParameterDescription key="FunctionParameter_290" name="Substrate" order="3" role="substrate"/>
-        <ParameterDescription key="FunctionParameter_292" name="jCdh" order="4" role="constant"/>
+        <ParameterDescription key="FunctionParameter_285" name="kAcCdhCdc" order="1" role="constant"/>
+        <ParameterDescription key="FunctionParameter_281" name="CDCa" order="2" role="modifier"/>
+        <ParameterDescription key="FunctionParameter_287" name="Substrate" order="3" role="substrate"/>
+        <ParameterDescription key="FunctionParameter_288" name="jCdh" order="4" role="constant"/>
       </ListOfParameterDescriptions>
     </Function>
     <Function key="Function_47" name="rInCdh" type="UserDefined" reversible="unspecified">
@@ -225,11 +225,11 @@ Reaction scheme where the products are created from the reactants and the change
       </Expression>
       <ListOfParameterDescriptions>
         <ParameterDescription key="FunctionParameter_293" name="kInCdhCln" order="0" role="constant"/>
-        <ParameterDescription key="FunctionParameter_289" name="CLN" order="1" role="modifier"/>
-        <ParameterDescription key="FunctionParameter_265" name="kInCdhClb" order="2" role="constant"/>
-        <ParameterDescription key="FunctionParameter_295" name="CLB" order="3" role="modifier"/>
-        <ParameterDescription key="FunctionParameter_297" name="Substrate" order="4" role="substrate"/>
-        <ParameterDescription key="FunctionParameter_299" name="jCdh" order="5" role="constant"/>
+        <ParameterDescription key="FunctionParameter_292" name="CLN" order="1" role="modifier"/>
+        <ParameterDescription key="FunctionParameter_291" name="kInCdhClb" order="2" role="constant"/>
+        <ParameterDescription key="FunctionParameter_290" name="CLB" order="3" role="modifier"/>
+        <ParameterDescription key="FunctionParameter_289" name="Substrate" order="4" role="substrate"/>
+        <ParameterDescription key="FunctionParameter_294" name="jCdh" order="5" role="constant"/>
       </ListOfParameterDescriptions>
     </Function>
     <Function key="Function_48" name="rSyClb" type="UserDefined" reversible="unspecified">
@@ -249,12 +249,12 @@ Reaction scheme where the products are created from the reactants and the change
       </Expression>
       <ListOfParameterDescriptions>
         <ParameterDescription key="FunctionParameter_300" name="kSyClb" order="0" role="constant"/>
-        <ParameterDescription key="FunctionParameter_296" name="kSyClbClb" order="1" role="constant"/>
-        <ParameterDescription key="FunctionParameter_287" name="CLB" order="2" role="modifier"/>
-        <ParameterDescription key="FunctionParameter_301" name="jSyClb" order="3" role="constant"/>
-        <ParameterDescription key="FunctionParameter_303" name="GDTM" order="4" role="modifier"/>
-        <ParameterDescription key="FunctionParameter_305" name="GCN" order="5" role="constant"/>
-        <ParameterDescription key="FunctionParameter_307" name="GDt" order="6" role="constant"/>
+        <ParameterDescription key="FunctionParameter_299" name="kSyClbClb" order="1" role="constant"/>
+        <ParameterDescription key="FunctionParameter_298" name="CLB" order="2" role="modifier"/>
+        <ParameterDescription key="FunctionParameter_297" name="jSyClb" order="3" role="constant"/>
+        <ParameterDescription key="FunctionParameter_296" name="GDTM" order="4" role="modifier"/>
+        <ParameterDescription key="FunctionParameter_295" name="GCN" order="5" role="constant"/>
+        <ParameterDescription key="FunctionParameter_301" name="GDt" order="6" role="constant"/>
       </ListOfParameterDescriptions>
     </Function>
     <Function key="Function_49" name="rDeClb" type="UserDefined" reversible="unspecified">
@@ -274,9 +274,9 @@ Reaction scheme where the products are created from the reactants and the change
       </Expression>
       <ListOfParameterDescriptions>
         <ParameterDescription key="FunctionParameter_308" name="kDeClb" order="0" role="constant"/>
-        <ParameterDescription key="FunctionParameter_304" name="kDeClbCdh" order="1" role="constant"/>
-        <ParameterDescription key="FunctionParameter_291" name="CDHa" order="2" role="modifier"/>
-        <ParameterDescription key="FunctionParameter_298" name="Substrate" order="3" role="substrate"/>
+        <ParameterDescription key="FunctionParameter_307" name="kDeClbCdh" order="1" role="constant"/>
+        <ParameterDescription key="FunctionParameter_306" name="CDHa" order="2" role="modifier"/>
+        <ParameterDescription key="FunctionParameter_305" name="Substrate" order="3" role="substrate"/>
       </ListOfParameterDescriptions>
     </Function>
     <Function key="Function_50" name="rSyWhi" type="UserDefined" reversible="unspecified">
@@ -297,9 +297,9 @@ Reaction scheme where the products are created from the reactants and the change
       <ListOfParameterDescriptions>
         <ParameterDescription key="FunctionParameter_309" name="GRd" order="0" role="constant"/>
         <ParameterDescription key="FunctionParameter_302" name="kSyWhi" order="1" role="constant"/>
-        <ParameterDescription key="FunctionParameter_310" name="GITM" order="2" role="modifier"/>
-        <ParameterDescription key="FunctionParameter_312" name="GWt" order="3" role="constant"/>
-        <ParameterDescription key="FunctionParameter_314" name="GIt" order="4" role="constant"/>
+        <ParameterDescription key="FunctionParameter_303" name="GITM" order="2" role="modifier"/>
+        <ParameterDescription key="FunctionParameter_304" name="GWt" order="3" role="constant"/>
+        <ParameterDescription key="FunctionParameter_310" name="GIt" order="4" role="constant"/>
       </ListOfParameterDescriptions>
     </Function>
     <Function key="Function_51" name="rPhWhip" type="UserDefined" reversible="unspecified">
@@ -319,14 +319,14 @@ Reaction scheme where the products are created from the reactants and the change
       </Expression>
       <ListOfParameterDescriptions>
         <ParameterDescription key="FunctionParameter_315" name="kPhWhipCln3" order="0" role="constant"/>
-        <ParameterDescription key="FunctionParameter_311" name="CLN3" order="1" role="modifier"/>
-        <ParameterDescription key="FunctionParameter_294" name="kPhWhipCln" order="2" role="constant"/>
-        <ParameterDescription key="FunctionParameter_317" name="CLN" order="3" role="modifier"/>
-        <ParameterDescription key="FunctionParameter_319" name="Substrate" order="4" role="substrate"/>
+        <ParameterDescription key="FunctionParameter_314" name="CLN3" order="1" role="modifier"/>
+        <ParameterDescription key="FunctionParameter_313" name="kPhWhipCln" order="2" role="constant"/>
+        <ParameterDescription key="FunctionParameter_312" name="CLN" order="3" role="modifier"/>
+        <ParameterDescription key="FunctionParameter_311" name="Substrate" order="4" role="substrate"/>
       </ListOfParameterDescriptions>
     </Function>
   </ListOfFunctions>
-  <Model key="Model_1" name="Budding yeast size control by titration of nuclear sites" simulationType="time" timeUnit="min" volumeUnit="AV" areaUnit="m²" lengthUnit="m" quantityUnit="#" type="deterministic" avogadroConstant="6.0221408570000002e+023">
+  <Model key="Model_1" name="Budding yeast size control by titration of nuclear sites" simulationType="time" timeUnit="min" volumeUnit="AV" areaUnit="m²" lengthUnit="m" quantityUnit="#" type="deterministic" avogadroConstant="6.0221408570000002e+23">
     <MiriamAnnotation>
 <rdf:RDF
    xmlns:dcterms="http://purl.org/dc/terms/"
@@ -362,6 +362,7 @@ Reaction scheme where the products are created from the reactants and the change
       This model is decribed in the article:
 Dilution and titration of cell-cycle regulators may control cell size in budding yeast
 Frank S. Heldt, Reece Lunstone, John J. Tyson, Bela Novak
+PLoS Comput Biol, October 2018, 14(10), e1006548, doi: 10.1371/journal.pcbi.1006548
 
 Abstract:
 The size of a cell sets the scale for all biochemical processes within it, thereby affecting cellular fitness and survival. Hence, cell size needs to be kept within certain limits and relatively constant over multiple generations. However, how cells measure their size and use this information to regulate growth and division remains controversial. Here, we present two mechanistic mathematical models of the budding yeast (S. cerevisiae) cell cycle to investigate competing hypotheses on size control: inhibitor dilution and titration of nuclear sites. Our results suggest that an inhibitor-dilution mechanism, in which cell growth dilutes the transcriptional inhibitor Whi5 against the constant activator Cln3, can facilitate size homeostasis. This is achieved by utilising a positive feedback loop to establish a fixed size threshold for the START transition, which efficiently couples cell growth to cell cycle progression. Yet, we show that inhibitor dilution cannot reproduce the size of mutants that alter the cell’s overall ploidy and WHI5 gene copy number. By contrast, size control through titration of Cln3 against a constant number of genomic binding sites for the transcription factor SBF recapitulates both size homeostasis and the size of these mutant strains. Moreover, this model produces an imperfect ‘sizer’ behaviour in G1 and a ‘timer’ in S/G2/M, which combine to yield an ‘adder’ over the whole cell cycle; an observation recently made in experiments. Hence, our model connects these phenomenological data with the molecular details of the cell cycle, providing a systems-level perspective of budding yeast size control.
@@ -369,7 +370,7 @@ The size of a cell sets the scale for all biochemical processes within it, there
 This version of the model, which is not shown in the article, tracks the parent cell after budding. Changes compared to the daughter cell model include: (i) the definition of rV, which affects the distribution of proteins at cell division, (ii) the change of compartment volume in the 'Division' event declaration, and (iii) the fate of newly synthesised Whi5 (WHIn) in the 'Division' event. Apart from these, all variables, reactions, parameters and events are the same.
     </Comment>
     <ListOfCompartments>
-      <Compartment key="Compartment_0" name="tV" simulationType="assignment" dimensionality="3">
+      <Compartment key="Compartment_0" name="tV" simulationType="assignment" dimensionality="3" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Compartment_0">
@@ -388,7 +389,7 @@ This version of the model, which is not shown in the article, tracks the parent 
           &lt;CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Compartments[mV],Reference=Volume>+&lt;CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Compartments[dV],Reference=Volume>
         </Expression>
       </Compartment>
-      <Compartment key="Compartment_1" name="mV" simulationType="ode" dimensionality="3">
+      <Compartment key="Compartment_1" name="mV" simulationType="ode" dimensionality="3" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Compartment_1">
@@ -407,7 +408,7 @@ This version of the model, which is not shown in the article, tracks the parent 
           &lt;CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Values[GRm],Reference=Value>*&lt;CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Values[kSyVo],Reference=Value>*&lt;CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Compartments[tV],Vector=Metabolites[GDTM],Reference=ParticleNumber>*(&lt;CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Values[GCN],Reference=Value>/&lt;CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Values[GDt],Reference=Value>)
         </Expression>
       </Compartment>
-      <Compartment key="Compartment_2" name="dV" simulationType="ode" dimensionality="3">
+      <Compartment key="Compartment_2" name="dV" simulationType="ode" dimensionality="3" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Compartment_2">
@@ -428,7 +429,7 @@ This version of the model, which is not shown in the article, tracks the parent 
       </Compartment>
     </ListOfCompartments>
     <ListOfMetabolites>
-      <Metabolite key="Metabolite_0" name="TM" simulationType="reactions" compartment="Compartment_0">
+      <Metabolite key="Metabolite_0" name="TM" simulationType="reactions" compartment="Compartment_0" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Metabolite_0">
@@ -444,7 +445,7 @@ This version of the model, which is not shown in the article, tracks the parent 
           (molecules) transcription machinery
         </Comment>
       </Metabolite>
-      <Metabolite key="Metabolite_1" name="GI" simulationType="assignment" compartment="Compartment_0">
+      <Metabolite key="Metabolite_1" name="GI" simulationType="assignment" compartment="Compartment_0" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Metabolite_1">
@@ -463,7 +464,7 @@ This version of the model, which is not shown in the article, tracks the parent 
           (&lt;CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Values[GIt],Reference=Value>-&lt;CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Compartments[tV],Vector=Metabolites[GITM],Reference=ParticleNumber>)/&lt;CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Compartments[tV],Reference=Volume>
         </Expression>
       </Metabolite>
-      <Metabolite key="Metabolite_2" name="GD" simulationType="assignment" compartment="Compartment_0">
+      <Metabolite key="Metabolite_2" name="GD" simulationType="assignment" compartment="Compartment_0" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Metabolite_2">
@@ -482,7 +483,7 @@ This version of the model, which is not shown in the article, tracks the parent 
           (&lt;CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Values[GDt],Reference=Value>-&lt;CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Compartments[tV],Vector=Metabolites[GDTM],Reference=ParticleNumber>)/&lt;CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Compartments[tV],Reference=Volume>
         </Expression>
       </Metabolite>
-      <Metabolite key="Metabolite_3" name="GITM" simulationType="reactions" compartment="Compartment_0">
+      <Metabolite key="Metabolite_3" name="GITM" simulationType="reactions" compartment="Compartment_0" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Metabolite_3">
@@ -498,7 +499,7 @@ This version of the model, which is not shown in the article, tracks the parent 
           (molecules) size-independent genes occupied by transcription machinery
         </Comment>
       </Metabolite>
-      <Metabolite key="Metabolite_4" name="GDTM" simulationType="reactions" compartment="Compartment_0">
+      <Metabolite key="Metabolite_4" name="GDTM" simulationType="reactions" compartment="Compartment_0" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Metabolite_4">
@@ -514,7 +515,7 @@ This version of the model, which is not shown in the article, tracks the parent 
           (molecules) size-dependent genes occupied by transcription machinery
         </Comment>
       </Metabolite>
-      <Metabolite key="Metabolite_5" name="CLN3" simulationType="reactions" compartment="Compartment_0">
+      <Metabolite key="Metabolite_5" name="CLN3" simulationType="reactions" compartment="Compartment_0" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Metabolite_5">
@@ -530,7 +531,7 @@ This version of the model, which is not shown in the article, tracks the parent 
           (AU) Cln3
         </Comment>
       </Metabolite>
-      <Metabolite key="Metabolite_6" name="WHI" simulationType="reactions" compartment="Compartment_0">
+      <Metabolite key="Metabolite_6" name="WHI" simulationType="reactions" compartment="Compartment_0" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Metabolite_6">
@@ -546,7 +547,7 @@ This version of the model, which is not shown in the article, tracks the parent 
           (AU) free Whi5
         </Comment>
       </Metabolite>
-      <Metabolite key="Metabolite_7" name="WHIp" simulationType="reactions" compartment="Compartment_0">
+      <Metabolite key="Metabolite_7" name="WHIp" simulationType="reactions" compartment="Compartment_0" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Metabolite_7">
@@ -562,7 +563,7 @@ This version of the model, which is not shown in the article, tracks the parent 
           (AU) phosphorylated Whi5
         </Comment>
       </Metabolite>
-      <Metabolite key="Metabolite_8" name="SBF" simulationType="assignment" compartment="Compartment_0">
+      <Metabolite key="Metabolite_8" name="SBF" simulationType="assignment" compartment="Compartment_0" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Metabolite_8">
@@ -581,7 +582,7 @@ This version of the model, which is not shown in the article, tracks the parent 
           &lt;CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Values[NSt],Reference=Value>/&lt;CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Compartments[tV],Reference=Volume>-&lt;CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Compartments[tV],Vector=Metabolites[WHISBF],Reference=Concentration>-&lt;CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Compartments[tV],Vector=Metabolites[CLN3WHISBF],Reference=Concentration>-&lt;CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Compartments[tV],Vector=Metabolites[WHIpSBF],Reference=Concentration>+1e-12
         </Expression>
       </Metabolite>
-      <Metabolite key="Metabolite_9" name="WHISBF" simulationType="reactions" compartment="Compartment_0">
+      <Metabolite key="Metabolite_9" name="WHISBF" simulationType="reactions" compartment="Compartment_0" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Metabolite_9">
@@ -600,7 +601,7 @@ This version of the model, which is not shown in the article, tracks the parent 
           0.66*&lt;CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Values[NSt],Reference=InitialValue>/&lt;CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Compartments[tV],Reference=InitialVolume>
         </InitialExpression>
       </Metabolite>
-      <Metabolite key="Metabolite_10" name="WHIn" simulationType="reactions" compartment="Compartment_0">
+      <Metabolite key="Metabolite_10" name="WHIn" simulationType="reactions" compartment="Compartment_0" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Metabolite_10">
@@ -616,7 +617,7 @@ This version of the model, which is not shown in the article, tracks the parent 
           (AU) newly synthesised Whi5
         </Comment>
       </Metabolite>
-      <Metabolite key="Metabolite_11" name="WHIt" simulationType="assignment" compartment="Compartment_0">
+      <Metabolite key="Metabolite_11" name="WHIt" simulationType="assignment" compartment="Compartment_0" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Metabolite_11">
@@ -635,7 +636,7 @@ This version of the model, which is not shown in the article, tracks the parent 
           &lt;CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Compartments[tV],Vector=Metabolites[WHI],Reference=Concentration>+&lt;CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Compartments[tV],Vector=Metabolites[WHIp],Reference=Concentration>+&lt;CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Compartments[tV],Vector=Metabolites[CLN3WHISBF],Reference=Concentration>+&lt;CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Compartments[tV],Vector=Metabolites[WHISBF],Reference=Concentration>+&lt;CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Compartments[tV],Vector=Metabolites[WHIpSBF],Reference=Concentration>+&lt;CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Compartments[tV],Vector=Metabolites[WHIn],Reference=Concentration>
         </Expression>
       </Metabolite>
-      <Metabolite key="Metabolite_12" name="SBFt" simulationType="assignment" compartment="Compartment_0">
+      <Metabolite key="Metabolite_12" name="SBFt" simulationType="assignment" compartment="Compartment_0" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Metabolite_12">
@@ -654,7 +655,7 @@ This version of the model, which is not shown in the article, tracks the parent 
           &lt;CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Compartments[tV],Vector=Metabolites[SBF],Reference=Concentration>+&lt;CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Compartments[tV],Vector=Metabolites[WHISBF],Reference=Concentration>+&lt;CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Compartments[tV],Vector=Metabolites[CLN3WHISBF],Reference=Concentration>+&lt;CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Compartments[tV],Vector=Metabolites[WHIpSBF],Reference=Concentration>
         </Expression>
       </Metabolite>
-      <Metabolite key="Metabolite_13" name="SBFu" simulationType="reactions" compartment="Compartment_0">
+      <Metabolite key="Metabolite_13" name="SBFu" simulationType="reactions" compartment="Compartment_0" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Metabolite_13">
@@ -675,7 +676,7 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           &lt;CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Compartments[tV],Vector=Metabolites[SBFt],Reference=InitialConcentration>-&lt;CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Compartments[tV],Vector=Metabolites[SBFp],Reference=InitialConcentration>
         </InitialExpression>
       </Metabolite>
-      <Metabolite key="Metabolite_14" name="SBFp" simulationType="reactions" compartment="Compartment_0">
+      <Metabolite key="Metabolite_14" name="SBFp" simulationType="reactions" compartment="Compartment_0" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Metabolite_14">
@@ -693,7 +694,7 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
 Note that SBFp and SBFu are treated independently from the other SBF-related variables such that SBFt = SBFp + SBFu as well as SBFt = SBF + WHISBF.
         </Comment>
       </Metabolite>
-      <Metabolite key="Metabolite_15" name="CLN" simulationType="reactions" compartment="Compartment_0">
+      <Metabolite key="Metabolite_15" name="CLN" simulationType="reactions" compartment="Compartment_0" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Metabolite_15">
@@ -709,7 +710,7 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           (AU) Cln1/2
         </Comment>
       </Metabolite>
-      <Metabolite key="Metabolite_16" name="CLB" simulationType="reactions" compartment="Compartment_0">
+      <Metabolite key="Metabolite_16" name="CLB" simulationType="reactions" compartment="Compartment_0" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Metabolite_16">
@@ -725,7 +726,7 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           (AU) Clb1/2
         </Comment>
       </Metabolite>
-      <Metabolite key="Metabolite_17" name="CDHa" simulationType="reactions" compartment="Compartment_0">
+      <Metabolite key="Metabolite_17" name="CDHa" simulationType="reactions" compartment="Compartment_0" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Metabolite_17">
@@ -741,7 +742,7 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           (AU) active APC/C^Cdh1
         </Comment>
       </Metabolite>
-      <Metabolite key="Metabolite_18" name="CDHi" simulationType="reactions" compartment="Compartment_0">
+      <Metabolite key="Metabolite_18" name="CDHi" simulationType="reactions" compartment="Compartment_0" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Metabolite_18">
@@ -757,7 +758,7 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           (AU) inactive APC/C^Cdh1
         </Comment>
       </Metabolite>
-      <Metabolite key="Metabolite_19" name="CDCa" simulationType="reactions" compartment="Compartment_0">
+      <Metabolite key="Metabolite_19" name="CDCa" simulationType="reactions" compartment="Compartment_0" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Metabolite_19">
@@ -773,7 +774,7 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           (AU) active APC/C^Cdc20
         </Comment>
       </Metabolite>
-      <Metabolite key="Metabolite_20" name="CDCi" simulationType="reactions" compartment="Compartment_0">
+      <Metabolite key="Metabolite_20" name="CDCi" simulationType="reactions" compartment="Compartment_0" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Metabolite_20">
@@ -789,7 +790,7 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           (AU) inactive APC/C^Cdc20
         </Comment>
       </Metabolite>
-      <Metabolite key="Metabolite_21" name="TMt" simulationType="assignment" compartment="Compartment_0">
+      <Metabolite key="Metabolite_21" name="TMt" simulationType="assignment" compartment="Compartment_0" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Metabolite_21">
@@ -808,7 +809,7 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           &lt;CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Compartments[tV],Vector=Metabolites[TM],Reference=Concentration>+&lt;CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Compartments[tV],Vector=Metabolites[GDTM],Reference=Concentration>+&lt;CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Compartments[tV],Vector=Metabolites[GITM],Reference=Concentration>
         </Expression>
       </Metabolite>
-      <Metabolite key="Metabolite_22" name="active SBF" simulationType="assignment" compartment="Compartment_0">
+      <Metabolite key="Metabolite_22" name="active SBF" simulationType="assignment" compartment="Compartment_0" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Metabolite_22">
@@ -827,7 +828,7 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           &lt;CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Compartments[tV],Vector=Metabolites[SBF],Reference=Concentration>*(&lt;CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Compartments[tV],Vector=Metabolites[SBFu],Reference=Concentration>/&lt;CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Compartments[tV],Vector=Metabolites[SBFt],Reference=Concentration>)
         </Expression>
       </Metabolite>
-      <Metabolite key="Metabolite_23" name="CLN3WHISBF" simulationType="reactions" compartment="Compartment_0">
+      <Metabolite key="Metabolite_23" name="CLN3WHISBF" simulationType="reactions" compartment="Compartment_0" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Metabolite_23">
@@ -846,7 +847,7 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           0.17*&lt;CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Values[NSt],Reference=InitialValue>/&lt;CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Compartments[tV],Reference=InitialVolume>
         </InitialExpression>
       </Metabolite>
-      <Metabolite key="Metabolite_24" name="WHIpSBF" simulationType="reactions" compartment="Compartment_0">
+      <Metabolite key="Metabolite_24" name="WHIpSBF" simulationType="reactions" compartment="Compartment_0" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Metabolite_24">
@@ -865,7 +866,7 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           0.17*&lt;CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Values[NSt],Reference=InitialValue>/&lt;CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Compartments[tV],Reference=InitialVolume>
         </InitialExpression>
       </Metabolite>
-      <Metabolite key="Metabolite_25" name="CLN3t" simulationType="assignment" compartment="Compartment_0">
+      <Metabolite key="Metabolite_25" name="CLN3t" simulationType="assignment" compartment="Compartment_0" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Metabolite_25">
@@ -886,7 +887,7 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
       </Metabolite>
     </ListOfMetabolites>
     <ListOfModelValues>
-      <ModelValue key="ModelValue_0" name="GDt" simulationType="fixed">
+      <ModelValue key="ModelValue_0" name="GDt" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#ModelValue_0">
@@ -905,7 +906,7 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           #
         </Unit>
       </ModelValue>
-      <ModelValue key="ModelValue_1" name="GCN" simulationType="fixed">
+      <ModelValue key="ModelValue_1" name="GCN" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#ModelValue_1">
@@ -924,7 +925,7 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           #
         </Unit>
       </ModelValue>
-      <ModelValue key="ModelValue_2" name="GWt" simulationType="fixed">
+      <ModelValue key="ModelValue_2" name="GWt" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#ModelValue_2">
@@ -943,7 +944,7 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           #
         </Unit>
       </ModelValue>
-      <ModelValue key="ModelValue_3" name="GCt" simulationType="fixed">
+      <ModelValue key="ModelValue_3" name="GCt" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#ModelValue_3">
@@ -962,7 +963,7 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           #
         </Unit>
       </ModelValue>
-      <ModelValue key="ModelValue_4" name="StartThr" simulationType="fixed">
+      <ModelValue key="ModelValue_4" name="StartThr" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#ModelValue_4">
@@ -981,7 +982,7 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           AU/AV
         </Unit>
       </ModelValue>
-      <ModelValue key="ModelValue_5" name="MitosisThr" simulationType="fixed">
+      <ModelValue key="ModelValue_5" name="MitosisThr" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#ModelValue_5">
@@ -1000,7 +1001,7 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           AU/AV
         </Unit>
       </ModelValue>
-      <ModelValue key="ModelValue_6" name="GRm" simulationType="fixed">
+      <ModelValue key="ModelValue_6" name="GRm" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#ModelValue_6">
@@ -1016,7 +1017,7 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           (-) binary variable (1 - if mother cell growths)
         </Comment>
       </ModelValue>
-      <ModelValue key="ModelValue_7" name="GRd" simulationType="fixed">
+      <ModelValue key="ModelValue_7" name="GRd" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#ModelValue_7">
@@ -1032,7 +1033,7 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           (-) binary variable (1 - if daughter cell growths)
         </Comment>
       </ModelValue>
-      <ModelValue key="ModelValue_8" name="kSyVo" simulationType="fixed">
+      <ModelValue key="ModelValue_8" name="kSyVo" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#ModelValue_8">
@@ -1051,7 +1052,7 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           AV/(#*min)
         </Unit>
       </ModelValue>
-      <ModelValue key="ModelValue_9" name="kSyTm" simulationType="fixed">
+      <ModelValue key="ModelValue_9" name="kSyTm" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#ModelValue_9">
@@ -1070,7 +1071,7 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           1/min
         </Unit>
       </ModelValue>
-      <ModelValue key="ModelValue_10" name="kAsGiTm" simulationType="fixed">
+      <ModelValue key="ModelValue_10" name="kAsGiTm" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#ModelValue_10">
@@ -1089,7 +1090,7 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           AV/(#*min)
         </Unit>
       </ModelValue>
-      <ModelValue key="ModelValue_11" name="kAsGdTm" simulationType="fixed">
+      <ModelValue key="ModelValue_11" name="kAsGdTm" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#ModelValue_11">
@@ -1108,7 +1109,7 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           AV/(#*min)
         </Unit>
       </ModelValue>
-      <ModelValue key="ModelValue_12" name="kDsGiTm" simulationType="fixed">
+      <ModelValue key="ModelValue_12" name="kDsGiTm" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#ModelValue_12">
@@ -1127,7 +1128,7 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           1/min
         </Unit>
       </ModelValue>
-      <ModelValue key="ModelValue_13" name="kDsGdTm" simulationType="fixed">
+      <ModelValue key="ModelValue_13" name="kDsGdTm" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#ModelValue_13">
@@ -1146,7 +1147,7 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           1/min
         </Unit>
       </ModelValue>
-      <ModelValue key="ModelValue_14" name="kSyCln3" simulationType="fixed">
+      <ModelValue key="ModelValue_14" name="kSyCln3" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#ModelValue_14">
@@ -1165,7 +1166,7 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           AU/(#*min)
         </Unit>
       </ModelValue>
-      <ModelValue key="ModelValue_15" name="kDeCln3" simulationType="fixed">
+      <ModelValue key="ModelValue_15" name="kDeCln3" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#ModelValue_15">
@@ -1184,7 +1185,7 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           1/min
         </Unit>
       </ModelValue>
-      <ModelValue key="ModelValue_16" name="kSyCln" simulationType="fixed">
+      <ModelValue key="ModelValue_16" name="kSyCln" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#ModelValue_16">
@@ -1203,7 +1204,7 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           AU/(#*min)
         </Unit>
       </ModelValue>
-      <ModelValue key="ModelValue_17" name="kDeCln" simulationType="fixed">
+      <ModelValue key="ModelValue_17" name="kDeCln" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#ModelValue_17">
@@ -1222,7 +1223,7 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           1/min
         </Unit>
       </ModelValue>
-      <ModelValue key="ModelValue_18" name="kSyClb" simulationType="fixed">
+      <ModelValue key="ModelValue_18" name="kSyClb" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#ModelValue_18">
@@ -1241,7 +1242,7 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           AU/(#*min)
         </Unit>
       </ModelValue>
-      <ModelValue key="ModelValue_19" name="kSyClbClb" simulationType="fixed">
+      <ModelValue key="ModelValue_19" name="kSyClbClb" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#ModelValue_19">
@@ -1260,7 +1261,7 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           AU/(#*min)
         </Unit>
       </ModelValue>
-      <ModelValue key="ModelValue_20" name="jSyClb" simulationType="fixed">
+      <ModelValue key="ModelValue_20" name="jSyClb" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#ModelValue_20">
@@ -1279,7 +1280,7 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           AU/AV
         </Unit>
       </ModelValue>
-      <ModelValue key="ModelValue_21" name="kDeClb" simulationType="fixed">
+      <ModelValue key="ModelValue_21" name="kDeClb" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#ModelValue_21">
@@ -1298,7 +1299,7 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           1/min
         </Unit>
       </ModelValue>
-      <ModelValue key="ModelValue_22" name="kDeClbCdh" simulationType="fixed">
+      <ModelValue key="ModelValue_22" name="kDeClbCdh" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#ModelValue_22">
@@ -1317,7 +1318,7 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           AV/(AU*min)
         </Unit>
       </ModelValue>
-      <ModelValue key="ModelValue_23" name="kSyWhi" simulationType="fixed">
+      <ModelValue key="ModelValue_23" name="kSyWhi" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#ModelValue_23">
@@ -1336,7 +1337,7 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           AU/(#*min)
         </Unit>
       </ModelValue>
-      <ModelValue key="ModelValue_24" name="kPhWhiCln3" simulationType="fixed">
+      <ModelValue key="ModelValue_24" name="kPhWhiCln3" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#ModelValue_24">
@@ -1355,7 +1356,7 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           1/min
         </Unit>
       </ModelValue>
-      <ModelValue key="ModelValue_25" name="kPhWhiCln" simulationType="fixed">
+      <ModelValue key="ModelValue_25" name="kPhWhiCln" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#ModelValue_25">
@@ -1374,7 +1375,7 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           AV/(AU*min)
         </Unit>
       </ModelValue>
-      <ModelValue key="ModelValue_26" name="kDpWhi" simulationType="fixed">
+      <ModelValue key="ModelValue_26" name="kDpWhi" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#ModelValue_26">
@@ -1393,7 +1394,7 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           1/min
         </Unit>
       </ModelValue>
-      <ModelValue key="ModelValue_27" name="kAsWhiSbf" simulationType="fixed">
+      <ModelValue key="ModelValue_27" name="kAsWhiSbf" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#ModelValue_27">
@@ -1412,7 +1413,7 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           AV/(AU*min)
         </Unit>
       </ModelValue>
-      <ModelValue key="ModelValue_28" name="kPhSbfClb" simulationType="fixed">
+      <ModelValue key="ModelValue_28" name="kPhSbfClb" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#ModelValue_28">
@@ -1431,7 +1432,7 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           AV/(AU*min)
         </Unit>
       </ModelValue>
-      <ModelValue key="ModelValue_29" name="kDpSbf" simulationType="fixed">
+      <ModelValue key="ModelValue_29" name="kDpSbf" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#ModelValue_29">
@@ -1450,7 +1451,7 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           1/min
         </Unit>
       </ModelValue>
-      <ModelValue key="ModelValue_30" name="kAcCdh" simulationType="fixed">
+      <ModelValue key="ModelValue_30" name="kAcCdh" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#ModelValue_30">
@@ -1469,7 +1470,7 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           AU/(AV*min)
         </Unit>
       </ModelValue>
-      <ModelValue key="ModelValue_31" name="kAcCdhCdc" simulationType="fixed">
+      <ModelValue key="ModelValue_31" name="kAcCdhCdc" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#ModelValue_31">
@@ -1488,7 +1489,7 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           1/min
         </Unit>
       </ModelValue>
-      <ModelValue key="ModelValue_32" name="kInCdhCln" simulationType="fixed">
+      <ModelValue key="ModelValue_32" name="kInCdhCln" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#ModelValue_32">
@@ -1507,7 +1508,7 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           1/min
         </Unit>
       </ModelValue>
-      <ModelValue key="ModelValue_33" name="kInCdhClb" simulationType="fixed">
+      <ModelValue key="ModelValue_33" name="kInCdhClb" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#ModelValue_33">
@@ -1526,7 +1527,7 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           1/min
         </Unit>
       </ModelValue>
-      <ModelValue key="ModelValue_34" name="jCdh" simulationType="fixed">
+      <ModelValue key="ModelValue_34" name="jCdh" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#ModelValue_34">
@@ -1545,7 +1546,7 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           AU/AV
         </Unit>
       </ModelValue>
-      <ModelValue key="ModelValue_35" name="kAcCdcClb" simulationType="fixed">
+      <ModelValue key="ModelValue_35" name="kAcCdcClb" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#ModelValue_35">
@@ -1564,7 +1565,7 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           1/min
         </Unit>
       </ModelValue>
-      <ModelValue key="ModelValue_36" name="kInCdc" simulationType="fixed">
+      <ModelValue key="ModelValue_36" name="kInCdc" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#ModelValue_36">
@@ -1583,7 +1584,7 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           AU/(AV*min)
         </Unit>
       </ModelValue>
-      <ModelValue key="ModelValue_37" name="jCdc" simulationType="fixed">
+      <ModelValue key="ModelValue_37" name="jCdc" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#ModelValue_37">
@@ -1602,7 +1603,7 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           AU/AV
         </Unit>
       </ModelValue>
-      <ModelValue key="ModelValue_38" name="GIt" simulationType="fixed">
+      <ModelValue key="ModelValue_38" name="GIt" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#ModelValue_38">
@@ -1624,7 +1625,7 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           #
         </Unit>
       </ModelValue>
-      <ModelValue key="ModelValue_39" name="kSySbf" simulationType="assignment">
+      <ModelValue key="ModelValue_39" name="kSySbf" simulationType="assignment" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#ModelValue_39">
@@ -1646,7 +1647,7 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           AU/(#*min)
         </Unit>
       </ModelValue>
-      <ModelValue key="ModelValue_40" name="kSyCdh" simulationType="assignment">
+      <ModelValue key="ModelValue_40" name="kSyCdh" simulationType="assignment" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#ModelValue_40">
@@ -1668,7 +1669,7 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           AU/(#*min)
         </Unit>
       </ModelValue>
-      <ModelValue key="ModelValue_41" name="kSyCdc" simulationType="assignment">
+      <ModelValue key="ModelValue_41" name="kSyCdc" simulationType="assignment" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#ModelValue_41">
@@ -1690,7 +1691,7 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           AU/(#*min)
         </Unit>
       </ModelValue>
-      <ModelValue key="ModelValue_42" name="rV" simulationType="assignment">
+      <ModelValue key="ModelValue_42" name="rV" simulationType="assignment" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#ModelValue_42">
@@ -1709,7 +1710,7 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           &lt;CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Compartments[mV],Reference=Volume>/&lt;CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Compartments[tV],Reference=Volume>
         </Expression>
       </ModelValue>
-      <ModelValue key="ModelValue_43" name="NSt" simulationType="fixed">
+      <ModelValue key="ModelValue_43" name="NSt" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#ModelValue_43">
@@ -1728,7 +1729,7 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           AU
         </Unit>
       </ModelValue>
-      <ModelValue key="ModelValue_44" name="kPhWhipCln3" simulationType="fixed">
+      <ModelValue key="ModelValue_44" name="kPhWhipCln3" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#ModelValue_44">
@@ -1747,7 +1748,7 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           AV/(AU*min)
         </Unit>
       </ModelValue>
-      <ModelValue key="ModelValue_45" name="kPhWhipCln" simulationType="fixed">
+      <ModelValue key="ModelValue_45" name="kPhWhipCln" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#ModelValue_45">
@@ -1766,7 +1767,7 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           AV/(AU*min)
         </Unit>
       </ModelValue>
-      <ModelValue key="ModelValue_46" name="kAsCln3Whi" simulationType="fixed">
+      <ModelValue key="ModelValue_46" name="kAsCln3Whi" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#ModelValue_46">
@@ -1785,7 +1786,7 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           AV/(AU*min)
         </Unit>
       </ModelValue>
-      <ModelValue key="ModelValue_47" name="kDsCln3Whi" simulationType="fixed">
+      <ModelValue key="ModelValue_47" name="kDsCln3Whi" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#ModelValue_47">
@@ -1806,7 +1807,7 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
       </ModelValue>
     </ListOfModelValues>
     <ListOfReactions>
-      <Reaction key="Reaction_0" name="Synthesis of transcription machninery" reversible="false" fast="false">
+      <Reaction key="Reaction_0" name="Synthesis of transcription machninery" reversible="false" fast="false" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Reaction_0">
@@ -1825,28 +1826,28 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           <Modifier metabolite="Metabolite_4" stoichiometry="1"/>
         </ListOfModifiers>
         <ListOfConstants>
-          <Constant key="Parameter_4968" name="kSy" value="2.1"/>
-          <Constant key="Parameter_4967" name="GCN" value="1"/>
-          <Constant key="Parameter_4966" name="GDt" value="500"/>
+          <Constant key="Parameter_5013" name="kSy" value="2.1"/>
+          <Constant key="Parameter_5012" name="GCN" value="1"/>
+          <Constant key="Parameter_5011" name="GDt" value="500"/>
         </ListOfConstants>
         <KineticLaw function="Function_40" unitType="Default" scalingCompartment="CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Compartments[tV]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_264">
               <SourceParameter reference="ModelValue_9"/>
             </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_254">
+            <CallParameter functionParameter="FunctionParameter_263">
               <SourceParameter reference="Metabolite_4"/>
             </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_258">
+            <CallParameter functionParameter="FunctionParameter_262">
               <SourceParameter reference="ModelValue_1"/>
             </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_266">
+            <CallParameter functionParameter="FunctionParameter_261">
               <SourceParameter reference="ModelValue_0"/>
             </CallParameter>
           </ListOfCallParameters>
         </KineticLaw>
       </Reaction>
-      <Reaction key="Reaction_1" name="Association/dissociation of TM and size-independent genes" reversible="true" fast="false">
+      <Reaction key="Reaction_1" name="Association/dissociation of TM and size-independent genes" reversible="true" fast="false" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Reaction_1">
@@ -1866,28 +1867,28 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           <Product metabolite="Metabolite_3" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4965" name="k1" value="10"/>
-          <Constant key="Parameter_4964" name="k2" value="0.1"/>
+          <Constant key="Parameter_5010" name="k1" value="10"/>
+          <Constant key="Parameter_5009" name="k2" value="0.1"/>
         </ListOfConstants>
         <KineticLaw function="Function_14" unitType="Default" scalingCompartment="CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Compartments[tV]">
           <ListOfCallParameters>
-            <CallParameter functionParameter="FunctionParameter_62">
+            <CallParameter functionParameter="FunctionParameter_69">
               <SourceParameter reference="ModelValue_10"/>
             </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_39">
+            <CallParameter functionParameter="FunctionParameter_68">
               <SourceParameter reference="Metabolite_0"/>
               <SourceParameter reference="Metabolite_1"/>
             </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_67">
+            <CallParameter functionParameter="FunctionParameter_78">
               <SourceParameter reference="ModelValue_12"/>
             </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_71">
+            <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_3"/>
             </CallParameter>
           </ListOfCallParameters>
         </KineticLaw>
       </Reaction>
-      <Reaction key="Reaction_2" name="Association/dissociation of TM and size-dependent genes" reversible="true" fast="false">
+      <Reaction key="Reaction_2" name="Association/dissociation of TM and size-dependent genes" reversible="true" fast="false" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Reaction_2">
@@ -1907,28 +1908,28 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           <Product metabolite="Metabolite_4" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4963" name="k1" value="1"/>
-          <Constant key="Parameter_4962" name="k2" value="1"/>
+          <Constant key="Parameter_5008" name="k1" value="1"/>
+          <Constant key="Parameter_5007" name="k2" value="1"/>
         </ListOfConstants>
         <KineticLaw function="Function_14" unitType="Default" scalingCompartment="CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Compartments[tV]">
           <ListOfCallParameters>
-            <CallParameter functionParameter="FunctionParameter_62">
+            <CallParameter functionParameter="FunctionParameter_69">
               <SourceParameter reference="ModelValue_11"/>
             </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_39">
+            <CallParameter functionParameter="FunctionParameter_68">
               <SourceParameter reference="Metabolite_0"/>
               <SourceParameter reference="Metabolite_2"/>
             </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_67">
+            <CallParameter functionParameter="FunctionParameter_78">
               <SourceParameter reference="ModelValue_13"/>
             </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_71">
+            <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_4"/>
             </CallParameter>
           </ListOfCallParameters>
         </KineticLaw>
       </Reaction>
-      <Reaction key="Reaction_3" name="Synthesis of Cln3" reversible="false" fast="false">
+      <Reaction key="Reaction_3" name="Synthesis of Cln3" reversible="false" fast="false" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Reaction_3">
@@ -1947,28 +1948,28 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           <Modifier metabolite="Metabolite_4" stoichiometry="1"/>
         </ListOfModifiers>
         <ListOfConstants>
-          <Constant key="Parameter_4961" name="kSy" value="1.5"/>
-          <Constant key="Parameter_4960" name="GCN" value="1"/>
-          <Constant key="Parameter_4959" name="GDt" value="500"/>
+          <Constant key="Parameter_5006" name="kSy" value="1.5"/>
+          <Constant key="Parameter_5005" name="GCN" value="1"/>
+          <Constant key="Parameter_5004" name="GDt" value="500"/>
         </ListOfConstants>
         <KineticLaw function="Function_40" unitType="Default" scalingCompartment="CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Compartments[tV]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_264">
               <SourceParameter reference="ModelValue_14"/>
             </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_254">
+            <CallParameter functionParameter="FunctionParameter_263">
               <SourceParameter reference="Metabolite_4"/>
             </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_258">
+            <CallParameter functionParameter="FunctionParameter_262">
               <SourceParameter reference="ModelValue_3"/>
             </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_266">
+            <CallParameter functionParameter="FunctionParameter_261">
               <SourceParameter reference="ModelValue_0"/>
             </CallParameter>
           </ListOfCallParameters>
         </KineticLaw>
       </Reaction>
-      <Reaction key="Reaction_4" name="Degradation of Cln3" reversible="false" fast="false">
+      <Reaction key="Reaction_4" name="Degradation of Cln3" reversible="false" fast="false" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Reaction_4">
@@ -1984,20 +1985,20 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           <Substrate metabolite="Metabolite_5" stoichiometry="1"/>
         </ListOfSubstrates>
         <ListOfConstants>
-          <Constant key="Parameter_4958" name="k1" value="1"/>
+          <Constant key="Parameter_5003" name="k1" value="1"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Compartments[tV]">
           <ListOfCallParameters>
-            <CallParameter functionParameter="FunctionParameter_81">
+            <CallParameter functionParameter="FunctionParameter_80">
               <SourceParameter reference="ModelValue_15"/>
             </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_79">
+            <CallParameter functionParameter="FunctionParameter_81">
               <SourceParameter reference="Metabolite_5"/>
             </CallParameter>
           </ListOfCallParameters>
         </KineticLaw>
       </Reaction>
-      <Reaction key="Reaction_5" name="Phosphorylation of SBF" reversible="false" fast="false">
+      <Reaction key="Reaction_5" name="Phosphorylation of SBF" reversible="false" fast="false" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Reaction_5">
@@ -2019,23 +2020,23 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           <Modifier metabolite="Metabolite_16" stoichiometry="1"/>
         </ListOfModifiers>
         <ListOfConstants>
-          <Constant key="Parameter_4957" name="kPhSbfClb" value="5"/>
+          <Constant key="Parameter_5002" name="kPhSbfClb" value="5"/>
         </ListOfConstants>
         <KineticLaw function="Function_42" unitType="Default" scalingCompartment="CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Compartments[tV]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_277">
               <SourceParameter reference="ModelValue_28"/>
             </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_273">
+            <CallParameter functionParameter="FunctionParameter_276">
               <SourceParameter reference="Metabolite_16"/>
             </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_269">
+            <CallParameter functionParameter="FunctionParameter_275">
               <SourceParameter reference="Metabolite_13"/>
             </CallParameter>
           </ListOfCallParameters>
         </KineticLaw>
       </Reaction>
-      <Reaction key="Reaction_6" name="Dephosphorylation of SBF" reversible="false" fast="false">
+      <Reaction key="Reaction_6" name="Dephosphorylation of SBF" reversible="false" fast="false" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Reaction_6">
@@ -2054,20 +2055,20 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           <Product metabolite="Metabolite_13" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4956" name="k1" value="0.2"/>
+          <Constant key="Parameter_5001" name="k1" value="0.2"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Compartments[tV]">
           <ListOfCallParameters>
-            <CallParameter functionParameter="FunctionParameter_81">
+            <CallParameter functionParameter="FunctionParameter_80">
               <SourceParameter reference="ModelValue_29"/>
             </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_79">
+            <CallParameter functionParameter="FunctionParameter_81">
               <SourceParameter reference="Metabolite_14"/>
             </CallParameter>
           </ListOfCallParameters>
         </KineticLaw>
       </Reaction>
-      <Reaction key="Reaction_7" name="Synthesis of Cln1/2" reversible="false" fast="false">
+      <Reaction key="Reaction_7" name="Synthesis of Cln1/2" reversible="false" fast="false" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Reaction_7">
@@ -2089,37 +2090,37 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           <Modifier metabolite="Metabolite_13" stoichiometry="1"/>
         </ListOfModifiers>
         <ListOfConstants>
-          <Constant key="Parameter_4955" name="kSyCln" value="8"/>
-          <Constant key="Parameter_4954" name="GCN" value="1"/>
-          <Constant key="Parameter_4953" name="GDt" value="500"/>
+          <Constant key="Parameter_5000" name="kSyCln" value="8"/>
+          <Constant key="Parameter_4999" name="GCN" value="1"/>
+          <Constant key="Parameter_4998" name="GDt" value="500"/>
         </ListOfConstants>
         <KineticLaw function="Function_41" unitType="Default" scalingCompartment="CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Compartments[tV]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_267">
               <SourceParameter reference="ModelValue_16"/>
             </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_246">
+            <CallParameter functionParameter="FunctionParameter_266">
               <SourceParameter reference="Metabolite_4"/>
             </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_268">
+            <CallParameter functionParameter="FunctionParameter_265">
               <SourceParameter reference="ModelValue_1"/>
             </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_270">
+            <CallParameter functionParameter="FunctionParameter_250">
               <SourceParameter reference="ModelValue_0"/>
             </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_272">
+            <CallParameter functionParameter="FunctionParameter_268">
               <SourceParameter reference="Metabolite_8"/>
             </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_274">
+            <CallParameter functionParameter="FunctionParameter_269">
               <SourceParameter reference="Metabolite_12"/>
             </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_276">
+            <CallParameter functionParameter="FunctionParameter_270">
               <SourceParameter reference="Metabolite_13"/>
             </CallParameter>
           </ListOfCallParameters>
         </KineticLaw>
       </Reaction>
-      <Reaction key="Reaction_8" name="Degradation of Cln1/2" reversible="false" fast="false">
+      <Reaction key="Reaction_8" name="Degradation of Cln1/2" reversible="false" fast="false" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Reaction_8">
@@ -2135,20 +2136,20 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           <Substrate metabolite="Metabolite_15" stoichiometry="1"/>
         </ListOfSubstrates>
         <ListOfConstants>
-          <Constant key="Parameter_4952" name="k1" value="1"/>
+          <Constant key="Parameter_4997" name="k1" value="1"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Compartments[tV]">
           <ListOfCallParameters>
-            <CallParameter functionParameter="FunctionParameter_81">
+            <CallParameter functionParameter="FunctionParameter_80">
               <SourceParameter reference="ModelValue_17"/>
             </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_79">
+            <CallParameter functionParameter="FunctionParameter_81">
               <SourceParameter reference="Metabolite_15"/>
             </CallParameter>
           </ListOfCallParameters>
         </KineticLaw>
       </Reaction>
-      <Reaction key="Reaction_9" name="Synthesis of Cdh1" reversible="false" fast="false">
+      <Reaction key="Reaction_9" name="Synthesis of Cdh1" reversible="false" fast="false" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Reaction_9">
@@ -2167,28 +2168,28 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           <Modifier metabolite="Metabolite_4" stoichiometry="1"/>
         </ListOfModifiers>
         <ListOfConstants>
-          <Constant key="Parameter_4951" name="kSy" value="0.042"/>
-          <Constant key="Parameter_4950" name="GCN" value="1"/>
-          <Constant key="Parameter_4949" name="GDt" value="500"/>
+          <Constant key="Parameter_4996" name="kSy" value="0.042"/>
+          <Constant key="Parameter_4995" name="GCN" value="1"/>
+          <Constant key="Parameter_4994" name="GDt" value="500"/>
         </ListOfConstants>
         <KineticLaw function="Function_40" unitType="Default" scalingCompartment="CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Compartments[tV]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_264">
               <SourceParameter reference="ModelValue_40"/>
             </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_254">
+            <CallParameter functionParameter="FunctionParameter_263">
               <SourceParameter reference="Metabolite_4"/>
             </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_258">
+            <CallParameter functionParameter="FunctionParameter_262">
               <SourceParameter reference="ModelValue_1"/>
             </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_266">
+            <CallParameter functionParameter="FunctionParameter_261">
               <SourceParameter reference="ModelValue_0"/>
             </CallParameter>
           </ListOfCallParameters>
         </KineticLaw>
       </Reaction>
-      <Reaction key="Reaction_10" name="Synthesis of Cdc20" reversible="false" fast="false">
+      <Reaction key="Reaction_10" name="Synthesis of Cdc20" reversible="false" fast="false" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Reaction_10">
@@ -2207,28 +2208,28 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           <Modifier metabolite="Metabolite_4" stoichiometry="1"/>
         </ListOfModifiers>
         <ListOfConstants>
-          <Constant key="Parameter_4948" name="kSy" value="0.042"/>
-          <Constant key="Parameter_4947" name="GCN" value="1"/>
-          <Constant key="Parameter_4946" name="GDt" value="500"/>
+          <Constant key="Parameter_4993" name="kSy" value="0.042"/>
+          <Constant key="Parameter_4992" name="GCN" value="1"/>
+          <Constant key="Parameter_4991" name="GDt" value="500"/>
         </ListOfConstants>
         <KineticLaw function="Function_40" unitType="Default" scalingCompartment="CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Compartments[tV]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_264">
               <SourceParameter reference="ModelValue_41"/>
             </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_254">
+            <CallParameter functionParameter="FunctionParameter_263">
               <SourceParameter reference="Metabolite_4"/>
             </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_258">
+            <CallParameter functionParameter="FunctionParameter_262">
               <SourceParameter reference="ModelValue_1"/>
             </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_266">
+            <CallParameter functionParameter="FunctionParameter_261">
               <SourceParameter reference="ModelValue_0"/>
             </CallParameter>
           </ListOfCallParameters>
         </KineticLaw>
       </Reaction>
-      <Reaction key="Reaction_11" name="Activation of APC^Cdc20" reversible="false" fast="false">
+      <Reaction key="Reaction_11" name="Activation of APC^Cdc20" reversible="false" fast="false" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Reaction_11">
@@ -2250,27 +2251,27 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           <Modifier metabolite="Metabolite_16" stoichiometry="1"/>
         </ListOfModifiers>
         <ListOfConstants>
-          <Constant key="Parameter_4945" name="kAcCdcClb" value="0.5"/>
-          <Constant key="Parameter_4944" name="jCdc" value="0.001"/>
+          <Constant key="Parameter_4990" name="kAcCdcClb" value="0.5"/>
+          <Constant key="Parameter_4989" name="jCdc" value="0.001"/>
         </ListOfConstants>
         <KineticLaw function="Function_44" unitType="Default" scalingCompartment="CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Compartments[tV]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_279">
               <SourceParameter reference="ModelValue_35"/>
             </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_271">
+            <CallParameter functionParameter="FunctionParameter_278">
               <SourceParameter reference="Metabolite_16"/>
             </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_281">
+            <CallParameter functionParameter="FunctionParameter_271">
               <SourceParameter reference="Metabolite_20"/>
             </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_283">
+            <CallParameter functionParameter="FunctionParameter_280">
               <SourceParameter reference="ModelValue_37"/>
             </CallParameter>
           </ListOfCallParameters>
         </KineticLaw>
       </Reaction>
-      <Reaction key="Reaction_12" name="Inactivation of APC/C^Cdc20" reversible="false" fast="false">
+      <Reaction key="Reaction_12" name="Inactivation of APC/C^Cdc20" reversible="false" fast="false" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Reaction_12">
@@ -2289,24 +2290,24 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           <Product metabolite="Metabolite_20" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4943" name="kInCdc" value="0.25"/>
-          <Constant key="Parameter_4942" name="jCdc" value="0.001"/>
+          <Constant key="Parameter_4988" name="kInCdc" value="0.25"/>
+          <Constant key="Parameter_4987" name="jCdc" value="0.001"/>
         </ListOfConstants>
         <KineticLaw function="Function_45" unitType="Default" scalingCompartment="CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Compartments[tV]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_284">
               <SourceParameter reference="ModelValue_36"/>
             </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_280">
+            <CallParameter functionParameter="FunctionParameter_283">
               <SourceParameter reference="Metabolite_19"/>
             </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_285">
+            <CallParameter functionParameter="FunctionParameter_282">
               <SourceParameter reference="ModelValue_37"/>
             </CallParameter>
           </ListOfCallParameters>
         </KineticLaw>
       </Reaction>
-      <Reaction key="Reaction_13" name="Activation of APC/C^Cdh1" reversible="false" fast="false">
+      <Reaction key="Reaction_13" name="Activation of APC/C^Cdh1" reversible="false" fast="false" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Reaction_13">
@@ -2328,31 +2329,31 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           <Modifier metabolite="Metabolite_19" stoichiometry="1"/>
         </ListOfModifiers>
         <ListOfConstants>
-          <Constant key="Parameter_4941" name="kAcCdh" value="0.01"/>
-          <Constant key="Parameter_4940" name="kAcCdhCdc" value="2"/>
-          <Constant key="Parameter_4939" name="jCdh" value="0.001"/>
+          <Constant key="Parameter_4986" name="kAcCdh" value="0.01"/>
+          <Constant key="Parameter_4985" name="kAcCdhCdc" value="2"/>
+          <Constant key="Parameter_4984" name="jCdh" value="0.001"/>
         </ListOfConstants>
         <KineticLaw function="Function_46" unitType="Default" scalingCompartment="CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Compartments[tV]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_286">
               <SourceParameter reference="ModelValue_30"/>
             </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_282">
+            <CallParameter functionParameter="FunctionParameter_285">
               <SourceParameter reference="ModelValue_31"/>
             </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_288">
+            <CallParameter functionParameter="FunctionParameter_281">
               <SourceParameter reference="Metabolite_19"/>
             </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_290">
+            <CallParameter functionParameter="FunctionParameter_287">
               <SourceParameter reference="Metabolite_18"/>
             </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_292">
+            <CallParameter functionParameter="FunctionParameter_288">
               <SourceParameter reference="ModelValue_34"/>
             </CallParameter>
           </ListOfCallParameters>
         </KineticLaw>
       </Reaction>
-      <Reaction key="Reaction_14" name="Inactivation of APC/C^Cdh1" reversible="false" fast="false">
+      <Reaction key="Reaction_14" name="Inactivation of APC/C^Cdh1" reversible="false" fast="false" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Reaction_14">
@@ -2375,34 +2376,34 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           <Modifier metabolite="Metabolite_16" stoichiometry="1"/>
         </ListOfModifiers>
         <ListOfConstants>
-          <Constant key="Parameter_4938" name="kInCdhCln" value="0.125"/>
-          <Constant key="Parameter_4937" name="kInCdhClb" value="2"/>
-          <Constant key="Parameter_4936" name="jCdh" value="0.001"/>
+          <Constant key="Parameter_4983" name="kInCdhCln" value="0.125"/>
+          <Constant key="Parameter_4982" name="kInCdhClb" value="2"/>
+          <Constant key="Parameter_4981" name="jCdh" value="0.001"/>
         </ListOfConstants>
         <KineticLaw function="Function_47" unitType="Default" scalingCompartment="CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Compartments[tV]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_293">
               <SourceParameter reference="ModelValue_32"/>
             </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_289">
+            <CallParameter functionParameter="FunctionParameter_292">
               <SourceParameter reference="Metabolite_15"/>
             </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_265">
+            <CallParameter functionParameter="FunctionParameter_291">
               <SourceParameter reference="ModelValue_33"/>
             </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_295">
+            <CallParameter functionParameter="FunctionParameter_290">
               <SourceParameter reference="Metabolite_16"/>
             </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_297">
+            <CallParameter functionParameter="FunctionParameter_289">
               <SourceParameter reference="Metabolite_17"/>
             </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_299">
+            <CallParameter functionParameter="FunctionParameter_294">
               <SourceParameter reference="ModelValue_34"/>
             </CallParameter>
           </ListOfCallParameters>
         </KineticLaw>
       </Reaction>
-      <Reaction key="Reaction_15" name="Synthesis of Clb1/2" reversible="false" fast="false">
+      <Reaction key="Reaction_15" name="Synthesis of Clb1/2" reversible="false" fast="false" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Reaction_15">
@@ -2422,39 +2423,39 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           <Modifier metabolite="Metabolite_4" stoichiometry="1"/>
         </ListOfModifiers>
         <ListOfConstants>
-          <Constant key="Parameter_4935" name="kSyClb" value="0.01"/>
-          <Constant key="Parameter_4934" name="kSyClbClb" value="0.3"/>
-          <Constant key="Parameter_4933" name="jSyClb" value="0.3"/>
-          <Constant key="Parameter_4932" name="GCN" value="1"/>
-          <Constant key="Parameter_4931" name="GDt" value="500"/>
+          <Constant key="Parameter_4980" name="kSyClb" value="0.01"/>
+          <Constant key="Parameter_4979" name="kSyClbClb" value="0.3"/>
+          <Constant key="Parameter_4978" name="jSyClb" value="0.3"/>
+          <Constant key="Parameter_4977" name="GCN" value="1"/>
+          <Constant key="Parameter_4976" name="GDt" value="500"/>
         </ListOfConstants>
         <KineticLaw function="Function_48" unitType="Default" scalingCompartment="CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Compartments[tV]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_300">
               <SourceParameter reference="ModelValue_18"/>
             </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_296">
+            <CallParameter functionParameter="FunctionParameter_299">
               <SourceParameter reference="ModelValue_19"/>
             </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_287">
+            <CallParameter functionParameter="FunctionParameter_298">
               <SourceParameter reference="Metabolite_16"/>
             </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_301">
+            <CallParameter functionParameter="FunctionParameter_297">
               <SourceParameter reference="ModelValue_20"/>
             </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_303">
+            <CallParameter functionParameter="FunctionParameter_296">
               <SourceParameter reference="Metabolite_4"/>
             </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_305">
+            <CallParameter functionParameter="FunctionParameter_295">
               <SourceParameter reference="ModelValue_1"/>
             </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_307">
+            <CallParameter functionParameter="FunctionParameter_301">
               <SourceParameter reference="ModelValue_0"/>
             </CallParameter>
           </ListOfCallParameters>
         </KineticLaw>
       </Reaction>
-      <Reaction key="Reaction_16" name="Degradation of Clb1/2" reversible="false" fast="false">
+      <Reaction key="Reaction_16" name="Degradation of Clb1/2" reversible="false" fast="false" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Reaction_16">
@@ -2473,27 +2474,27 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           <Modifier metabolite="Metabolite_17" stoichiometry="1"/>
         </ListOfModifiers>
         <ListOfConstants>
-          <Constant key="Parameter_4930" name="kDeClb" value="0.01"/>
-          <Constant key="Parameter_4929" name="kDeClbCdh" value="2"/>
+          <Constant key="Parameter_4975" name="kDeClb" value="0.01"/>
+          <Constant key="Parameter_4974" name="kDeClbCdh" value="2"/>
         </ListOfConstants>
         <KineticLaw function="Function_49" unitType="Default" scalingCompartment="CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Compartments[tV]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_308">
               <SourceParameter reference="ModelValue_21"/>
             </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_304">
+            <CallParameter functionParameter="FunctionParameter_307">
               <SourceParameter reference="ModelValue_22"/>
             </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_291">
+            <CallParameter functionParameter="FunctionParameter_306">
               <SourceParameter reference="Metabolite_17"/>
             </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_298">
+            <CallParameter functionParameter="FunctionParameter_305">
               <SourceParameter reference="Metabolite_16"/>
             </CallParameter>
           </ListOfCallParameters>
         </KineticLaw>
       </Reaction>
-      <Reaction key="Reaction_17" name="Synthesis of Whi5" reversible="false" fast="false">
+      <Reaction key="Reaction_17" name="Synthesis of Whi5" reversible="false" fast="false" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Reaction_17">
@@ -2512,10 +2513,10 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           <Modifier metabolite="Metabolite_3" stoichiometry="1"/>
         </ListOfModifiers>
         <ListOfConstants>
-          <Constant key="Parameter_4928" name="GRd" value="0"/>
-          <Constant key="Parameter_4927" name="kSyWhi" value="0.02"/>
-          <Constant key="Parameter_4926" name="GWt" value="1"/>
-          <Constant key="Parameter_4925" name="GIt" value="1"/>
+          <Constant key="Parameter_4973" name="GRd" value="0"/>
+          <Constant key="Parameter_4972" name="kSyWhi" value="0.02"/>
+          <Constant key="Parameter_4971" name="GWt" value="1"/>
+          <Constant key="Parameter_4970" name="GIt" value="1"/>
         </ListOfConstants>
         <KineticLaw function="Function_50" unitType="Default" scalingCompartment="CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Compartments[tV]">
           <ListOfCallParameters>
@@ -2525,19 +2526,19 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
             <CallParameter functionParameter="FunctionParameter_302">
               <SourceParameter reference="ModelValue_23"/>
             </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_310">
+            <CallParameter functionParameter="FunctionParameter_303">
               <SourceParameter reference="Metabolite_3"/>
             </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_312">
+            <CallParameter functionParameter="FunctionParameter_304">
               <SourceParameter reference="ModelValue_2"/>
             </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_314">
+            <CallParameter functionParameter="FunctionParameter_310">
               <SourceParameter reference="ModelValue_38"/>
             </CallParameter>
           </ListOfCallParameters>
         </KineticLaw>
       </Reaction>
-      <Reaction key="Reaction_18" name="Association/dissociation of Cln3 and Whi5:SBF" reversible="true" fast="false">
+      <Reaction key="Reaction_18" name="Association/dissociation of Cln3 and Whi5:SBF" reversible="true" fast="false" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Reaction_18">
@@ -2557,28 +2558,28 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           <Product metabolite="Metabolite_23" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4924" name="k1" value="100"/>
-          <Constant key="Parameter_4923" name="k2" value="0.1"/>
+          <Constant key="Parameter_4969" name="k1" value="100"/>
+          <Constant key="Parameter_4968" name="k2" value="0.1"/>
         </ListOfConstants>
         <KineticLaw function="Function_14" unitType="Default" scalingCompartment="CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Compartments[tV]">
           <ListOfCallParameters>
-            <CallParameter functionParameter="FunctionParameter_62">
+            <CallParameter functionParameter="FunctionParameter_69">
               <SourceParameter reference="ModelValue_46"/>
             </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_39">
+            <CallParameter functionParameter="FunctionParameter_68">
               <SourceParameter reference="Metabolite_5"/>
               <SourceParameter reference="Metabolite_9"/>
             </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_67">
+            <CallParameter functionParameter="FunctionParameter_78">
               <SourceParameter reference="ModelValue_47"/>
             </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_71">
+            <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_23"/>
             </CallParameter>
           </ListOfCallParameters>
         </KineticLaw>
       </Reaction>
-      <Reaction key="Reaction_19" name="Association of Whi5 and SBF" reversible="false" fast="false">
+      <Reaction key="Reaction_19" name="Association of Whi5 and SBF" reversible="false" fast="false" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Reaction_19">
@@ -2598,21 +2599,21 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           <Product metabolite="Metabolite_9" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4922" name="k1" value="1"/>
+          <Constant key="Parameter_4967" name="k1" value="1"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Compartments[tV]">
           <ListOfCallParameters>
-            <CallParameter functionParameter="FunctionParameter_81">
+            <CallParameter functionParameter="FunctionParameter_80">
               <SourceParameter reference="ModelValue_27"/>
             </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_79">
+            <CallParameter functionParameter="FunctionParameter_81">
               <SourceParameter reference="Metabolite_6"/>
               <SourceParameter reference="Metabolite_8"/>
             </CallParameter>
           </ListOfCallParameters>
         </KineticLaw>
       </Reaction>
-      <Reaction key="Reaction_20" name="Phosphorylation of free Whi5" reversible="false" fast="false">
+      <Reaction key="Reaction_20" name="Phosphorylation of free Whi5" reversible="false" fast="false" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Reaction_20">
@@ -2634,23 +2635,23 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           <Modifier metabolite="Metabolite_15" stoichiometry="1"/>
         </ListOfModifiers>
         <ListOfConstants>
-          <Constant key="Parameter_4921" name="kPhWhiCln" value="100"/>
+          <Constant key="Parameter_4966" name="kPhWhiCln" value="100"/>
         </ListOfConstants>
         <KineticLaw function="Function_43" unitType="Default" scalingCompartment="CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Compartments[tV]">
           <ListOfCallParameters>
-            <CallParameter functionParameter="FunctionParameter_262">
+            <CallParameter functionParameter="FunctionParameter_272">
               <SourceParameter reference="ModelValue_25"/>
             </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_275">
+            <CallParameter functionParameter="FunctionParameter_273">
               <SourceParameter reference="Metabolite_15"/>
             </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_278">
+            <CallParameter functionParameter="FunctionParameter_274">
               <SourceParameter reference="Metabolite_6"/>
             </CallParameter>
           </ListOfCallParameters>
         </KineticLaw>
       </Reaction>
-      <Reaction key="Reaction_21" name="Dephosphorylation of free Whi5" reversible="false" fast="false">
+      <Reaction key="Reaction_21" name="Dephosphorylation of free Whi5" reversible="false" fast="false" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Reaction_21">
@@ -2669,20 +2670,20 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           <Product metabolite="Metabolite_6" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4920" name="k1" value="1"/>
+          <Constant key="Parameter_4965" name="k1" value="1"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Compartments[tV]">
           <ListOfCallParameters>
-            <CallParameter functionParameter="FunctionParameter_81">
+            <CallParameter functionParameter="FunctionParameter_80">
               <SourceParameter reference="ModelValue_26"/>
             </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_79">
+            <CallParameter functionParameter="FunctionParameter_81">
               <SourceParameter reference="Metabolite_7"/>
             </CallParameter>
           </ListOfCallParameters>
         </KineticLaw>
       </Reaction>
-      <Reaction key="Reaction_22" name="Phosphorylation of Whi5 in Cln3:Whi5:SBF complexes" reversible="false" fast="false">
+      <Reaction key="Reaction_22" name="Phosphorylation of Whi5 in Cln3:Whi5:SBF complexes" reversible="false" fast="false" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Reaction_22">
@@ -2702,20 +2703,20 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           <Product metabolite="Metabolite_24" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4919" name="k1" value="1"/>
+          <Constant key="Parameter_4964" name="k1" value="1"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Compartments[tV]">
           <ListOfCallParameters>
-            <CallParameter functionParameter="FunctionParameter_81">
+            <CallParameter functionParameter="FunctionParameter_80">
               <SourceParameter reference="ModelValue_24"/>
             </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_79">
+            <CallParameter functionParameter="FunctionParameter_81">
               <SourceParameter reference="Metabolite_23"/>
             </CallParameter>
           </ListOfCallParameters>
         </KineticLaw>
       </Reaction>
-      <Reaction key="Reaction_23" name="Degradation of Cln3 in Cln3:Whi5:SBF complexes" reversible="false" fast="false">
+      <Reaction key="Reaction_23" name="Degradation of Cln3 in Cln3:Whi5:SBF complexes" reversible="false" fast="false" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Reaction_23">
@@ -2734,20 +2735,20 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           <Product metabolite="Metabolite_9" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4918" name="k1" value="1"/>
+          <Constant key="Parameter_4963" name="k1" value="1"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Compartments[tV]">
           <ListOfCallParameters>
-            <CallParameter functionParameter="FunctionParameter_81">
+            <CallParameter functionParameter="FunctionParameter_80">
               <SourceParameter reference="ModelValue_15"/>
             </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_79">
+            <CallParameter functionParameter="FunctionParameter_81">
               <SourceParameter reference="Metabolite_23"/>
             </CallParameter>
           </ListOfCallParameters>
         </KineticLaw>
       </Reaction>
-      <Reaction key="Reaction_24" name="Dephosphorylation of hypo-phosphorylated Whi5 in Whi5:SBF complexes" reversible="false" fast="false">
+      <Reaction key="Reaction_24" name="Dephosphorylation of hypo-phosphorylated Whi5 in Whi5:SBF complexes" reversible="false" fast="false" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Reaction_24">
@@ -2766,20 +2767,20 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           <Product metabolite="Metabolite_9" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4917" name="k1" value="1"/>
+          <Constant key="Parameter_4962" name="k1" value="1"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Compartments[tV]">
           <ListOfCallParameters>
-            <CallParameter functionParameter="FunctionParameter_81">
+            <CallParameter functionParameter="FunctionParameter_80">
               <SourceParameter reference="ModelValue_26"/>
             </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_79">
+            <CallParameter functionParameter="FunctionParameter_81">
               <SourceParameter reference="Metabolite_24"/>
             </CallParameter>
           </ListOfCallParameters>
         </KineticLaw>
       </Reaction>
-      <Reaction key="Reaction_25" name="Hyper-phosphorylation of Whi5 in hypo-phosphorylated Whi5:SBF complexes" reversible="false" fast="false">
+      <Reaction key="Reaction_25" name="Hyper-phosphorylation of Whi5 in hypo-phosphorylated Whi5:SBF complexes" reversible="false" fast="false" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Reaction_25">
@@ -2803,24 +2804,24 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           <Modifier metabolite="Metabolite_15" stoichiometry="1"/>
         </ListOfModifiers>
         <ListOfConstants>
-          <Constant key="Parameter_4916" name="kPhWhipCln3" value="1"/>
-          <Constant key="Parameter_4915" name="kPhWhipCln" value="3"/>
+          <Constant key="Parameter_4961" name="kPhWhipCln3" value="1"/>
+          <Constant key="Parameter_4960" name="kPhWhipCln" value="3"/>
         </ListOfConstants>
         <KineticLaw function="Function_51" unitType="Default" scalingCompartment="CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Compartments[tV]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_315">
               <SourceParameter reference="ModelValue_44"/>
             </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_311">
+            <CallParameter functionParameter="FunctionParameter_314">
               <SourceParameter reference="Metabolite_5"/>
             </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_294">
+            <CallParameter functionParameter="FunctionParameter_313">
               <SourceParameter reference="ModelValue_45"/>
             </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_317">
+            <CallParameter functionParameter="FunctionParameter_312">
               <SourceParameter reference="Metabolite_15"/>
             </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_319">
+            <CallParameter functionParameter="FunctionParameter_311">
               <SourceParameter reference="Metabolite_24"/>
             </CallParameter>
           </ListOfCallParameters>
@@ -3075,7 +3076,7 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           <ModelParameter cn="CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Compartments[tV],Vector=Metabolites[CLN3]" value="0" type="Species" simulationType="reactions"/>
           <ModelParameter cn="CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Compartments[tV],Vector=Metabolites[WHI]" value="4" type="Species" simulationType="reactions"/>
           <ModelParameter cn="CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Compartments[tV],Vector=Metabolites[WHIp]" value="0.10000000000000001" type="Species" simulationType="reactions"/>
-          <ModelParameter cn="CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Compartments[tV],Vector=Metabolites[SBF]" value="1.1999333866185224e-012" type="Species" simulationType="assignment"/>
+          <ModelParameter cn="CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Compartments[tV],Vector=Metabolites[SBF]" value="1.1999333866185224e-12" type="Species" simulationType="assignment"/>
           <ModelParameter cn="CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Compartments[tV],Vector=Metabolites[WHISBF]" value="0.66000000000000003" type="Species" simulationType="reactions">
             <InitialExpression>
               0.66*&lt;CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Values[NSt],Reference=InitialValue>/&lt;CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Compartments[tV],Reference=InitialVolume>
@@ -3097,7 +3098,7 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
           <ModelParameter cn="CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Compartments[tV],Vector=Metabolites[CDCa]" value="0" type="Species" simulationType="reactions"/>
           <ModelParameter cn="CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Compartments[tV],Vector=Metabolites[CDCi]" value="1.2" type="Species" simulationType="reactions"/>
           <ModelParameter cn="CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Compartments[tV],Vector=Metabolites[TMt]" value="61" type="Species" simulationType="assignment"/>
-          <ModelParameter cn="CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Compartments[tV],Vector=Metabolites[active SBF]" value="1.1999333866185224e-012" type="Species" simulationType="assignment"/>
+          <ModelParameter cn="CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Compartments[tV],Vector=Metabolites[active SBF]" value="1.1999333866185224e-12" type="Species" simulationType="assignment"/>
           <ModelParameter cn="CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Compartments[tV],Vector=Metabolites[CLN3WHISBF]" value="0.17000000000000001" type="Species" simulationType="reactions">
             <InitialExpression>
               0.17*&lt;CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Values[NSt],Reference=InitialValue>/&lt;CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Compartments[tV],Reference=InitialVolume>
@@ -3571,7 +3572,7 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
       <StateTemplateVariable objectReference="ModelValue_47"/>
     </StateTemplate>
     <InitialState type="initialState">
-      0 1.2 0 0 0.66000000000000003 0 0.10000000000000001 0 1.2 1.0000000000012002 0 0 0.17000000000000001 0 4 1.2 1 0 60 0.17000000000000001 0 0 440 1.1999333866185224e-012 5.0999999999999996 1.0000000000012002 61 1.1999333866185224e-012 0.17000000000000001 1.2 0.042000000000000003 0.042000000000000003 0.042000000000000003 1 500 1 1 1 0.29999999999999999 0.20000000000000001 1 0 0.042000000000000003 2.1000000000000001 10 1 0.10000000000000001 1 1.5 1 8 1 0.01 0.29999999999999999 0.29999999999999999 0.01 2 0.02 1 100 1 1 5 0.20000000000000001 0.01 2 0.125 2 0.001 0.5 0.25 0.001 1 1 1 3 100 0.10000000000000001 
+      0 1.2 0 0 0.66000000000000003 0 0.10000000000000001 0 1.2 1.0000000000012002 0 0 0.17000000000000001 0 4 1.2 1 0 60 0.17000000000000001 0 0 440 1.1999333866185224e-12 5.0999999999999996 1.0000000000012002 61 1.1999333866185224e-12 0.17000000000000001 1.2 0.042000000000000003 0.042000000000000003 0.042000000000000003 1 500 1 1 1 0.29999999999999999 0.20000000000000001 1 0 0.042000000000000003 2.1000000000000001 10 1 0.10000000000000001 1 1.5 1 8 1 0.01 0.29999999999999999 0.29999999999999999 0.01 2 0.02 1 100 1 1 5 0.20000000000000001 0.01 2 0.125 2 0.001 0.5 0.25 0.001 1 1 1 3 100 0.10000000000000001 
     </InitialState>
   </Model>
   <ListOfTasks>
@@ -3582,7 +3583,7 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
         <Parameter name="StabilityAnalysisRequested" type="bool" value="1"/>
       </Problem>
       <Method name="Enhanced Newton" type="EnhancedNewton">
-        <Parameter name="Resolution" type="unsignedFloat" value="1.0000000000000001e-009"/>
+        <Parameter name="Resolution" type="unsignedFloat" value="1.0000000000000001e-09"/>
         <Parameter name="Derivation Factor" type="unsignedFloat" value="0.001"/>
         <Parameter name="Use Newton" type="bool" value="1"/>
         <Parameter name="Use Integration" type="bool" value="1"/>
@@ -3606,8 +3607,8 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
       </Problem>
       <Method name="Deterministic (LSODA)" type="Deterministic(LSODA)">
         <Parameter name="Integrate Reduced Model" type="bool" value="0"/>
-        <Parameter name="Relative Tolerance" type="unsignedFloat" value="9.9999999999999995e-007"/>
-        <Parameter name="Absolute Tolerance" type="unsignedFloat" value="9.9999999999999998e-013"/>
+        <Parameter name="Relative Tolerance" type="unsignedFloat" value="9.9999999999999995e-07"/>
+        <Parameter name="Absolute Tolerance" type="unsignedFloat" value="9.9999999999999998e-13"/>
         <Parameter name="Max Internal Steps" type="unsignedInteger" value="10000"/>
         <Parameter name="Max Internal Step Size" type="unsignedFloat" value="0"/>
       </Method>
@@ -3646,6 +3647,7 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
         </ParameterGroup>
       </Problem>
       <Method name="Random Search" type="RandomSearch">
+        <Parameter name="Log Verbosity" type="unsignedInteger" value="0"/>
         <Parameter name="Number of Iterations" type="unsignedInteger" value="100000"/>
         <Parameter name="Random Number Generator" type="unsignedInteger" value="1"/>
         <Parameter name="Seed" type="unsignedInteger" value="0"/>
@@ -3667,15 +3669,17 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
         <ParameterGroup name="Experiment Set">
         </ParameterGroup>
         <ParameterGroup name="Validation Set">
-          <Parameter name="Threshold" type="unsignedInteger" value="5"/>
           <Parameter name="Weight" type="unsignedFloat" value="1"/>
+          <Parameter name="Threshold" type="unsignedInteger" value="5"/>
         </ParameterGroup>
       </Problem>
       <Method name="Evolutionary Programming" type="EvolutionaryProgram">
+        <Parameter name="Log Verbosity" type="unsignedInteger" value="0"/>
         <Parameter name="Number of Generations" type="unsignedInteger" value="200"/>
         <Parameter name="Population Size" type="unsignedInteger" value="20"/>
         <Parameter name="Random Number Generator" type="unsignedInteger" value="1"/>
         <Parameter name="Seed" type="unsignedInteger" value="0"/>
+        <Parameter name="Stop after # Stalled Generations" type="unsignedInteger" value="0"/>
       </Method>
     </Task>
     <Task key="Task_20" name="Metabolic Control Analysis" type="metabolicControlAnalysis" scheduled="false" updateModel="false">
@@ -3684,7 +3688,7 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
         <Parameter name="Steady-State" type="key" value="Task_14"/>
       </Problem>
       <Method name="MCA Method (Reder)" type="MCAMethod(Reder)">
-        <Parameter name="Modulation Factor" type="unsignedFloat" value="1.0000000000000001e-009"/>
+        <Parameter name="Modulation Factor" type="unsignedFloat" value="1.0000000000000001e-09"/>
         <Parameter name="Use Reder" type="bool" value="1"/>
         <Parameter name="Use Smallbone" type="bool" value="1"/>
       </Method>
@@ -3699,8 +3703,8 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
       <Method name="Wolf Method" type="WolfMethod">
         <Parameter name="Orthonormalization Interval" type="unsignedFloat" value="1"/>
         <Parameter name="Overall time" type="unsignedFloat" value="1000"/>
-        <Parameter name="Relative Tolerance" type="unsignedFloat" value="9.9999999999999995e-007"/>
-        <Parameter name="Absolute Tolerance" type="unsignedFloat" value="9.9999999999999998e-013"/>
+        <Parameter name="Relative Tolerance" type="unsignedFloat" value="9.9999999999999995e-07"/>
+        <Parameter name="Absolute Tolerance" type="unsignedFloat" value="9.9999999999999998e-13"/>
         <Parameter name="Max Internal Steps" type="unsignedInteger" value="10000"/>
       </Method>
     </Task>
@@ -3714,7 +3718,7 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
         <Parameter name="OutputStartTime" type="float" value="0"/>
       </Problem>
       <Method name="ILDM (LSODA,Deuflhard)" type="TimeScaleSeparation(ILDM,Deuflhard)">
-        <Parameter name="Deuflhard Tolerance" type="unsignedFloat" value="9.9999999999999995e-007"/>
+        <Parameter name="Deuflhard Tolerance" type="unsignedFloat" value="9.9999999999999995e-07"/>
       </Method>
     </Task>
     <Task key="Task_23" name="Sensitivities" type="sensitivities" scheduled="false" updateModel="false">
@@ -3738,7 +3742,7 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
       </Problem>
       <Method name="Sensitivities Method" type="SensitivitiesMethod">
         <Parameter name="Delta factor" type="unsignedFloat" value="0.001"/>
-        <Parameter name="Delta minimum" type="unsignedFloat" value="9.9999999999999998e-013"/>
+        <Parameter name="Delta minimum" type="unsignedFloat" value="9.9999999999999998e-13"/>
       </Method>
     </Task>
     <Task key="Task_24" name="Moieties" type="moieties" scheduled="false" updateModel="false">
@@ -3764,10 +3768,10 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
         <Parameter name="PositiveDirection" type="bool" value="1"/>
         <Parameter name="NumOutCrossingsLimit" type="unsignedInteger" value="0"/>
         <Parameter name="LimitUntilConvergence" type="bool" value="0"/>
-        <Parameter name="ConvergenceTolerance" type="float" value="9.9999999999999995e-007"/>
+        <Parameter name="ConvergenceTolerance" type="float" value="9.9999999999999995e-07"/>
         <Parameter name="Threshold" type="float" value="0"/>
         <Parameter name="DelayOutputUntilConvergence" type="bool" value="0"/>
-        <Parameter name="OutputConvergenceTolerance" type="float" value="9.9999999999999995e-007"/>
+        <Parameter name="OutputConvergenceTolerance" type="float" value="9.9999999999999995e-07"/>
         <ParameterText name="TriggerExpression" type="expression">
           
         </ParameterText>
@@ -3775,8 +3779,8 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
       </Problem>
       <Method name="Deterministic (LSODA)" type="Deterministic(LSODA)">
         <Parameter name="Integrate Reduced Model" type="bool" value="0"/>
-        <Parameter name="Relative Tolerance" type="unsignedFloat" value="9.9999999999999995e-007"/>
-        <Parameter name="Absolute Tolerance" type="unsignedFloat" value="9.9999999999999998e-013"/>
+        <Parameter name="Relative Tolerance" type="unsignedFloat" value="9.9999999999999995e-07"/>
+        <Parameter name="Absolute Tolerance" type="unsignedFloat" value="9.9999999999999998e-13"/>
         <Parameter name="Max Internal Steps" type="unsignedInteger" value="10000"/>
         <Parameter name="Max Internal Step Size" type="unsignedFloat" value="0"/>
       </Method>
@@ -3917,41 +3921,41 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
     </Report>
   </ListOfReports>
   <ListOfPlots>
-    <PlotSpecification name="Start transition" type="Plot2D" active="1">
+    <PlotSpecification name="Start transition" type="Plot2D" active="1" taskTypes="">
       <Parameter name="log X" type="bool" value="0"/>
       <Parameter name="log Y" type="bool" value="0"/>
       <ListOfPlotItems>
         <PlotItem name="[CLN3t]" type="Curve2D">
-          <Parameter name="Color" type="string" value="#00E600"/>
-          <Parameter name="Line subtype" type="unsignedInteger" value="0"/>
           <Parameter name="Line type" type="unsignedInteger" value="0"/>
+          <Parameter name="Line subtype" type="unsignedInteger" value="0"/>
           <Parameter name="Line width" type="unsignedFloat" value="1"/>
-          <Parameter name="Recording Activity" type="string" value="during"/>
           <Parameter name="Symbol subtype" type="unsignedInteger" value="0"/>
+          <Parameter name="Color" type="string" value="#00E600"/>
+          <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
             <ChannelSpec cn="CN=Root,Model=Budding yeast size control by titration of nuclear sites,Reference=Time"/>
             <ChannelSpec cn="CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Compartments[tV],Vector=Metabolites[CLN3t],Reference=Concentration"/>
           </ListOfChannels>
         </PlotItem>
         <PlotItem name="[WHIt]" type="Curve2D">
-          <Parameter name="Color" type="string" value="#FF0000"/>
-          <Parameter name="Line subtype" type="unsignedInteger" value="0"/>
           <Parameter name="Line type" type="unsignedInteger" value="0"/>
+          <Parameter name="Line subtype" type="unsignedInteger" value="0"/>
           <Parameter name="Line width" type="unsignedFloat" value="1"/>
-          <Parameter name="Recording Activity" type="string" value="during"/>
           <Parameter name="Symbol subtype" type="unsignedInteger" value="0"/>
+          <Parameter name="Color" type="string" value="#FF0000"/>
+          <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
             <ChannelSpec cn="CN=Root,Model=Budding yeast size control by titration of nuclear sites,Reference=Time"/>
             <ChannelSpec cn="CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Compartments[tV],Vector=Metabolites[WHIt],Reference=Concentration"/>
           </ListOfChannels>
         </PlotItem>
         <PlotItem name="[active SBF]" type="Curve2D">
-          <Parameter name="Color" type="string" value="#F000FF"/>
-          <Parameter name="Line subtype" type="unsignedInteger" value="0"/>
           <Parameter name="Line type" type="unsignedInteger" value="0"/>
+          <Parameter name="Line subtype" type="unsignedInteger" value="0"/>
           <Parameter name="Line width" type="unsignedFloat" value="1"/>
-          <Parameter name="Recording Activity" type="string" value="during"/>
           <Parameter name="Symbol subtype" type="unsignedInteger" value="0"/>
+          <Parameter name="Color" type="string" value="#F000FF"/>
+          <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
             <ChannelSpec cn="CN=Root,Model=Budding yeast size control by titration of nuclear sites,Reference=Time"/>
             <ChannelSpec cn="CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Compartments[tV],Vector=Metabolites[active SBF],Reference=Concentration"/>
@@ -3959,41 +3963,41 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
         </PlotItem>
       </ListOfPlotItems>
     </PlotSpecification>
-    <PlotSpecification name="Cell cycle regulators" type="Plot2D" active="1">
+    <PlotSpecification name="Cell cycle regulators" type="Plot2D" active="1" taskTypes="">
       <Parameter name="log X" type="bool" value="0"/>
       <Parameter name="log Y" type="bool" value="0"/>
       <ListOfPlotItems>
         <PlotItem name="[Clbs]" type="Curve2D">
-          <Parameter name="Color" type="string" value="#0000FF"/>
-          <Parameter name="Line subtype" type="unsignedInteger" value="0"/>
           <Parameter name="Line type" type="unsignedInteger" value="0"/>
+          <Parameter name="Line subtype" type="unsignedInteger" value="0"/>
           <Parameter name="Line width" type="unsignedFloat" value="1"/>
-          <Parameter name="Recording Activity" type="string" value="during"/>
           <Parameter name="Symbol subtype" type="unsignedInteger" value="0"/>
+          <Parameter name="Color" type="string" value="#0000FF"/>
+          <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
             <ChannelSpec cn="CN=Root,Model=Budding yeast size control by titration of nuclear sites,Reference=Time"/>
             <ChannelSpec cn="CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Compartments[tV],Vector=Metabolites[CLB],Reference=Concentration"/>
           </ListOfChannels>
         </PlotItem>
         <PlotItem name="[Clns]" type="Curve2D">
-          <Parameter name="Color" type="string" value="#00BEF0"/>
-          <Parameter name="Line subtype" type="unsignedInteger" value="0"/>
           <Parameter name="Line type" type="unsignedInteger" value="0"/>
+          <Parameter name="Line subtype" type="unsignedInteger" value="0"/>
           <Parameter name="Line width" type="unsignedFloat" value="1"/>
-          <Parameter name="Recording Activity" type="string" value="during"/>
           <Parameter name="Symbol subtype" type="unsignedInteger" value="0"/>
+          <Parameter name="Color" type="string" value="#00BEF0"/>
+          <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
             <ChannelSpec cn="CN=Root,Model=Budding yeast size control by titration of nuclear sites,Reference=Time"/>
             <ChannelSpec cn="CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Compartments[tV],Vector=Metabolites[CLN],Reference=Concentration"/>
           </ListOfChannels>
         </PlotItem>
         <PlotItem name="[active Cdh1]" type="Curve2D">
-          <Parameter name="Color" type="string" value="#F0C800"/>
-          <Parameter name="Line subtype" type="unsignedInteger" value="0"/>
           <Parameter name="Line type" type="unsignedInteger" value="0"/>
+          <Parameter name="Line subtype" type="unsignedInteger" value="0"/>
           <Parameter name="Line width" type="unsignedFloat" value="1"/>
-          <Parameter name="Recording Activity" type="string" value="during"/>
           <Parameter name="Symbol subtype" type="unsignedInteger" value="0"/>
+          <Parameter name="Color" type="string" value="#F0C800"/>
+          <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
             <ChannelSpec cn="CN=Root,Model=Budding yeast size control by titration of nuclear sites,Reference=Time"/>
             <ChannelSpec cn="CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Compartments[tV],Vector=Metabolites[CDHa],Reference=Concentration"/>
@@ -4001,29 +4005,29 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
         </PlotItem>
       </ListOfPlotItems>
     </PlotSpecification>
-    <PlotSpecification name="Cell volume" type="Plot2D" active="1">
+    <PlotSpecification name="Cell volume" type="Plot2D" active="1" taskTypes="">
       <Parameter name="log X" type="bool" value="0"/>
       <Parameter name="log Y" type="bool" value="0"/>
       <ListOfPlotItems>
         <PlotItem name="Daughter volume" type="Curve2D">
-          <Parameter name="Color" type="string" value="#F0C800"/>
-          <Parameter name="Line subtype" type="unsignedInteger" value="0"/>
           <Parameter name="Line type" type="unsignedInteger" value="0"/>
+          <Parameter name="Line subtype" type="unsignedInteger" value="0"/>
           <Parameter name="Line width" type="unsignedFloat" value="1"/>
-          <Parameter name="Recording Activity" type="string" value="during"/>
           <Parameter name="Symbol subtype" type="unsignedInteger" value="0"/>
+          <Parameter name="Color" type="string" value="#F0C800"/>
+          <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
             <ChannelSpec cn="CN=Root,Model=Budding yeast size control by titration of nuclear sites,Reference=Time"/>
             <ChannelSpec cn="CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Compartments[dV],Reference=Volume"/>
           </ListOfChannels>
         </PlotItem>
         <PlotItem name="Mother volume" type="Curve2D">
-          <Parameter name="Color" type="string" value="#00BEF0"/>
-          <Parameter name="Line subtype" type="unsignedInteger" value="0"/>
           <Parameter name="Line type" type="unsignedInteger" value="0"/>
+          <Parameter name="Line subtype" type="unsignedInteger" value="0"/>
           <Parameter name="Line width" type="unsignedFloat" value="1"/>
-          <Parameter name="Recording Activity" type="string" value="during"/>
           <Parameter name="Symbol subtype" type="unsignedInteger" value="0"/>
+          <Parameter name="Color" type="string" value="#00BEF0"/>
+          <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
             <ChannelSpec cn="CN=Root,Model=Budding yeast size control by titration of nuclear sites,Reference=Time"/>
             <ChannelSpec cn="CN=Root,Model=Budding yeast size control by titration of nuclear sites,Vector=Compartments[mV],Reference=Volume"/>

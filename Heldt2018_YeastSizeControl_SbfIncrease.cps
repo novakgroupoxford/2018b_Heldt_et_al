@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- generated with COPASI 4.24 (Build 197) (http://www.copasi.org) at 2018-10-15 15:50:54 UTC -->
+<!-- generated with COPASI 4.24 (Build 197) (http://www.copasi.org) at 2018-10-24 10:50:24 UTC -->
 <?oxygen RNGSchema="http://www.copasi.org/static/schema/CopasiML.rng" type="xml"?>
 <COPASI xmlns="http://www.copasi.org/static/schema" versionMajor="4" versionMinor="24" versionDevel="197" copasiSourcesModified="0">
   <ListOfFunctions>
@@ -319,6 +319,7 @@ Reaction scheme where the products are created from the reactants and the change
       This model is decribed in the article:
 Dilution and titration of cell-cycle regulators may control cell size in budding yeast
 Frank S. Heldt, Reece Lunstone, John J. Tyson, Bela Novak
+PLoS Comput Biol, October 2018, 14(10), e1006548, doi: 10.1371/journal.pcbi.1006548
 
 Abstract:
 The size of a cell sets the scale for all biochemical processes within it, thereby affecting cellular fitness and survival. Hence, cell size needs to be kept within certain limits and relatively constant over multiple generations. However, how cells measure their size and use this information to regulate growth and division remains controversial. Here, we present two mechanistic mathematical models of the budding yeast (S. cerevisiae) cell cycle to investigate competing hypotheses on size control: inhibitor dilution and titration of nuclear sites. Our results suggest that an inhibitor-dilution mechanism, in which cell growth dilutes the transcriptional inhibitor Whi5 against the constant activator Cln3, can facilitate size homeostasis. This is achieved by utilising a positive feedback loop to establish a fixed size threshold for the START transition, which efficiently couples cell growth to cell cycle progression. Yet, we show that inhibitor dilution cannot reproduce the size of mutants that alter the cell’s overall ploidy and WHI5 gene copy number. By contrast, size control through titration of Cln3 against a constant number of genomic binding sites for the transcription factor SBF recapitulates both size homeostasis and the size of these mutant strains. Moreover, this model produces an imperfect ‘sizer’ behaviour in G1 and a ‘timer’ in S/G2/M, which combine to yield an ‘adder’ over the whole cell cycle; an observation recently made in experiments. Hence, our model connects these phenomenological data with the molecular details of the cell cycle, providing a systems-level perspective of budding yeast size control.
@@ -326,9 +327,7 @@ The size of a cell sets the scale for all biochemical processes within it, there
     <ListOfCompartments>
       <Compartment key="Compartment_0" name="tV" simulationType="assignment" dimensionality="3" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Compartment_0">
     <dcterms:created>
       <rdf:Description>
@@ -337,7 +336,6 @@ The size of a cell sets the scale for all biochemical processes within it, there
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <Comment>
           (AV)  total cell volume (including mother and daughter cell)
@@ -348,9 +346,7 @@ The size of a cell sets the scale for all biochemical processes within it, there
       </Compartment>
       <Compartment key="Compartment_1" name="mV" simulationType="ode" dimensionality="3" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Compartment_1">
     <dcterms:created>
       <rdf:Description>
@@ -359,7 +355,6 @@ The size of a cell sets the scale for all biochemical processes within it, there
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <Comment>
           (AV)  mother cell volume
@@ -370,9 +365,7 @@ The size of a cell sets the scale for all biochemical processes within it, there
       </Compartment>
       <Compartment key="Compartment_2" name="dV" simulationType="ode" dimensionality="3" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Compartment_2">
     <dcterms:created>
       <rdf:Description>
@@ -381,7 +374,6 @@ The size of a cell sets the scale for all biochemical processes within it, there
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <Comment>
           (AV)  daughter cell volume
@@ -394,9 +386,7 @@ The size of a cell sets the scale for all biochemical processes within it, there
     <ListOfMetabolites>
       <Metabolite key="Metabolite_0" name="TM" simulationType="reactions" compartment="Compartment_0" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Metabolite_0">
     <dcterms:created>
       <rdf:Description>
@@ -405,7 +395,6 @@ The size of a cell sets the scale for all biochemical processes within it, there
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <Comment>
           (molecules) transcription machinery
@@ -413,9 +402,7 @@ The size of a cell sets the scale for all biochemical processes within it, there
       </Metabolite>
       <Metabolite key="Metabolite_1" name="GI" simulationType="assignment" compartment="Compartment_0" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Metabolite_1">
     <dcterms:created>
       <rdf:Description>
@@ -424,7 +411,6 @@ The size of a cell sets the scale for all biochemical processes within it, there
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <Comment>
           (molecules) free, size-independent genes
@@ -435,9 +421,7 @@ The size of a cell sets the scale for all biochemical processes within it, there
       </Metabolite>
       <Metabolite key="Metabolite_2" name="GD" simulationType="assignment" compartment="Compartment_0" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Metabolite_2">
     <dcterms:created>
       <rdf:Description>
@@ -446,7 +430,6 @@ The size of a cell sets the scale for all biochemical processes within it, there
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <Comment>
           (molecules) free, size-dependent genes
@@ -457,9 +440,7 @@ The size of a cell sets the scale for all biochemical processes within it, there
       </Metabolite>
       <Metabolite key="Metabolite_3" name="GITM" simulationType="reactions" compartment="Compartment_0" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Metabolite_3">
     <dcterms:created>
       <rdf:Description>
@@ -468,7 +449,6 @@ The size of a cell sets the scale for all biochemical processes within it, there
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <Comment>
           (molecules) size-independent genes occupied by transcription machinery
@@ -476,9 +456,7 @@ The size of a cell sets the scale for all biochemical processes within it, there
       </Metabolite>
       <Metabolite key="Metabolite_4" name="GDTM" simulationType="reactions" compartment="Compartment_0" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Metabolite_4">
     <dcterms:created>
       <rdf:Description>
@@ -487,7 +465,6 @@ The size of a cell sets the scale for all biochemical processes within it, there
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <Comment>
           (molecules) size-dependent genes occupied by transcription machinery
@@ -495,9 +472,7 @@ The size of a cell sets the scale for all biochemical processes within it, there
       </Metabolite>
       <Metabolite key="Metabolite_5" name="CLN3" simulationType="reactions" compartment="Compartment_0" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Metabolite_5">
     <dcterms:created>
       <rdf:Description>
@@ -506,7 +481,6 @@ The size of a cell sets the scale for all biochemical processes within it, there
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <Comment>
           (AU) Cln3
@@ -514,9 +488,7 @@ The size of a cell sets the scale for all biochemical processes within it, there
       </Metabolite>
       <Metabolite key="Metabolite_6" name="CLN" simulationType="reactions" compartment="Compartment_0" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Metabolite_6">
     <dcterms:created>
       <rdf:Description>
@@ -525,7 +497,6 @@ The size of a cell sets the scale for all biochemical processes within it, there
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <Comment>
           (AU) Cln1/2
@@ -533,9 +504,7 @@ The size of a cell sets the scale for all biochemical processes within it, there
       </Metabolite>
       <Metabolite key="Metabolite_7" name="CLB" simulationType="reactions" compartment="Compartment_0" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Metabolite_7">
     <dcterms:created>
       <rdf:Description>
@@ -544,7 +513,6 @@ The size of a cell sets the scale for all biochemical processes within it, there
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <Comment>
           (AU) Clb1/2
@@ -552,9 +520,7 @@ The size of a cell sets the scale for all biochemical processes within it, there
       </Metabolite>
       <Metabolite key="Metabolite_8" name="CDHa" simulationType="reactions" compartment="Compartment_0" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Metabolite_8">
     <dcterms:created>
       <rdf:Description>
@@ -563,7 +529,6 @@ The size of a cell sets the scale for all biochemical processes within it, there
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <Comment>
           (AU) active APC/C^Cdh1
@@ -571,9 +536,7 @@ The size of a cell sets the scale for all biochemical processes within it, there
       </Metabolite>
       <Metabolite key="Metabolite_9" name="CDHi" simulationType="reactions" compartment="Compartment_0" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Metabolite_9">
     <dcterms:created>
       <rdf:Description>
@@ -582,7 +545,6 @@ The size of a cell sets the scale for all biochemical processes within it, there
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <Comment>
           (AU) inactive APC/C^Cdh1
@@ -590,9 +552,7 @@ The size of a cell sets the scale for all biochemical processes within it, there
       </Metabolite>
       <Metabolite key="Metabolite_10" name="CDCa" simulationType="reactions" compartment="Compartment_0" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Metabolite_10">
     <dcterms:created>
       <rdf:Description>
@@ -601,7 +561,6 @@ The size of a cell sets the scale for all biochemical processes within it, there
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <Comment>
           (AU) active APC/C^Cdc20
@@ -609,9 +568,7 @@ The size of a cell sets the scale for all biochemical processes within it, there
       </Metabolite>
       <Metabolite key="Metabolite_11" name="CDCi" simulationType="reactions" compartment="Compartment_0" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Metabolite_11">
     <dcterms:created>
       <rdf:Description>
@@ -620,7 +577,6 @@ The size of a cell sets the scale for all biochemical processes within it, there
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <Comment>
           (AU) inactive APC/C^Cdc20
@@ -628,9 +584,7 @@ The size of a cell sets the scale for all biochemical processes within it, there
       </Metabolite>
       <Metabolite key="Metabolite_12" name="WHI" simulationType="reactions" compartment="Compartment_0" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Metabolite_12">
     <dcterms:created>
       <rdf:Description>
@@ -639,7 +593,6 @@ The size of a cell sets the scale for all biochemical processes within it, there
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <Comment>
           (AU) free Whi5
@@ -647,9 +600,7 @@ The size of a cell sets the scale for all biochemical processes within it, there
       </Metabolite>
       <Metabolite key="Metabolite_13" name="WHIp" simulationType="reactions" compartment="Compartment_0" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Metabolite_13">
     <dcterms:created>
       <rdf:Description>
@@ -658,7 +609,6 @@ The size of a cell sets the scale for all biochemical processes within it, there
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <Comment>
           (AU) phosphorylated Whi5
@@ -666,9 +616,7 @@ The size of a cell sets the scale for all biochemical processes within it, there
       </Metabolite>
       <Metabolite key="Metabolite_14" name="SBF" simulationType="reactions" compartment="Compartment_0" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Metabolite_14">
     <dcterms:created>
       <rdf:Description>
@@ -677,7 +625,6 @@ The size of a cell sets the scale for all biochemical processes within it, there
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <Comment>
           (AU) free SBF
@@ -685,9 +632,7 @@ The size of a cell sets the scale for all biochemical processes within it, there
       </Metabolite>
       <Metabolite key="Metabolite_15" name="WHISBF" simulationType="reactions" compartment="Compartment_0" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Metabolite_15">
     <dcterms:created>
       <rdf:Description>
@@ -696,7 +641,6 @@ The size of a cell sets the scale for all biochemical processes within it, there
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <Comment>
           (AU) Whi5:SBF complexes
@@ -704,9 +648,7 @@ The size of a cell sets the scale for all biochemical processes within it, there
       </Metabolite>
       <Metabolite key="Metabolite_16" name="NSSBF" simulationType="reactions" compartment="Compartment_0" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Metabolite_16">
     <dcterms:created>
       <rdf:Description>
@@ -715,7 +657,6 @@ The size of a cell sets the scale for all biochemical processes within it, there
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <Comment>
           (AU) SBF on nuclear sites (SBF promoters)
@@ -723,9 +664,7 @@ The size of a cell sets the scale for all biochemical processes within it, there
       </Metabolite>
       <Metabolite key="Metabolite_17" name="SBFp" simulationType="reactions" compartment="Compartment_0" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Metabolite_17">
     <dcterms:created>
       <rdf:Description>
@@ -734,7 +673,6 @@ The size of a cell sets the scale for all biochemical processes within it, there
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <Comment>
           (AU) phosphorylated (inactive) SBF
@@ -742,9 +680,7 @@ The size of a cell sets the scale for all biochemical processes within it, there
       </Metabolite>
       <Metabolite key="Metabolite_18" name="PI" simulationType="reactions" compartment="Compartment_0" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Metabolite_18">
     <dcterms:created>
       <rdf:Description>
@@ -753,7 +689,6 @@ The size of a cell sets the scale for all biochemical processes within it, there
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <Comment>
           (AU) size-independent protein
@@ -761,9 +696,7 @@ The size of a cell sets the scale for all biochemical processes within it, there
       </Metabolite>
       <Metabolite key="Metabolite_19" name="NS" simulationType="assignment" compartment="Compartment_0" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Metabolite_19">
     <dcterms:created>
       <rdf:Description>
@@ -772,7 +705,6 @@ The size of a cell sets the scale for all biochemical processes within it, there
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <Comment>
           (AU)  number of free nuclear sites
@@ -783,9 +715,7 @@ The size of a cell sets the scale for all biochemical processes within it, there
       </Metabolite>
       <Metabolite key="Metabolite_20" name="TMt" simulationType="assignment" compartment="Compartment_0" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Metabolite_20">
     <dcterms:created>
       <rdf:Description>
@@ -794,7 +724,6 @@ The size of a cell sets the scale for all biochemical processes within it, there
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <Comment>
           (molecules) total amount of transcription machinery
@@ -805,9 +734,7 @@ The size of a cell sets the scale for all biochemical processes within it, there
       </Metabolite>
       <Metabolite key="Metabolite_21" name="SBFt" simulationType="assignment" compartment="Compartment_0" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Metabolite_21">
     <dcterms:created>
       <rdf:Description>
@@ -816,7 +743,6 @@ The size of a cell sets the scale for all biochemical processes within it, there
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <Comment>
           (AU) total SBF
@@ -827,9 +753,7 @@ The size of a cell sets the scale for all biochemical processes within it, there
       </Metabolite>
       <Metabolite key="Metabolite_22" name="WHIt" simulationType="assignment" compartment="Compartment_0" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Metabolite_22">
     <dcterms:created>
       <rdf:Description>
@@ -838,7 +762,6 @@ The size of a cell sets the scale for all biochemical processes within it, there
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <Comment>
           (AU) total Whi5
@@ -2171,9 +2094,7 @@ The size of a cell sets the scale for all biochemical processes within it, there
       </Reaction>
       <Reaction key="Reaction_9" name="Activation of APC/C^Cdh1" reversible="false" fast="false" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Reaction_9">
     <dcterms:created>
       <rdf:Description>
@@ -2182,7 +2103,6 @@ The size of a cell sets the scale for all biochemical processes within it, there
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <ListOfSubstrates>
           <Substrate metabolite="Metabolite_9" stoichiometry="1"/>
@@ -3130,10 +3050,10 @@ The size of a cell sets the scale for all biochemical processes within it, there
           <Modifier metabolite="Metabolite_16" stoichiometry="1"/>
         </ListOfModifiers>
         <ListOfConstants>
-          <Constant key="Parameter_4947" name="kSyCln" value="8"/>
-          <Constant key="Parameter_4948" name="GCN" value="1"/>
-          <Constant key="Parameter_4945" name="GDt" value="500"/>
-          <Constant key="Parameter_4946" name="NSt" value="1"/>
+          <Constant key="Parameter_4948" name="kSyCln" value="8"/>
+          <Constant key="Parameter_4946" name="GCN" value="1"/>
+          <Constant key="Parameter_4944" name="GDt" value="500"/>
+          <Constant key="Parameter_4947" name="NSt" value="1"/>
         </ListOfConstants>
         <KineticLaw function="Function_49" unitType="Default" scalingCompartment="CN=Root,Model=Budding yeast size control by increasing SBF concentration,Vector=Compartments[tV]">
           <ListOfCallParameters>
