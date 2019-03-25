@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- generated with COPASI 4.24 (Build 197) (http://www.copasi.org) at 2018-10-24 10:50:24 UTC -->
+<!-- generated with COPASI 4.24 (Build 197) (http://www.copasi.org) at 2019-03-25 15:18:17 UTC -->
 <?oxygen RNGSchema="http://www.copasi.org/static/schema/CopasiML.rng" type="xml"?>
 <COPASI xmlns="http://www.copasi.org/static/schema" versionMajor="4" versionMinor="24" versionDevel="197" copasiSourcesModified="0">
   <ListOfFunctions>
@@ -316,7 +316,7 @@ Reaction scheme where the products are created from the reactants and the change
 
     </MiriamAnnotation>
     <Comment>
-      This model is decribed in the article:
+      This model is described in the article:
 Dilution and titration of cell-cycle regulators may control cell size in budding yeast
 Frank S. Heldt, Reece Lunstone, John J. Tyson, Bela Novak
 PLoS Comput Biol, October 2018, 14(10), e1006548, doi: 10.1371/journal.pcbi.1006548
@@ -3051,9 +3051,9 @@ The size of a cell sets the scale for all biochemical processes within it, there
         </ListOfModifiers>
         <ListOfConstants>
           <Constant key="Parameter_4948" name="kSyCln" value="8"/>
-          <Constant key="Parameter_4946" name="GCN" value="1"/>
-          <Constant key="Parameter_4944" name="GDt" value="500"/>
-          <Constant key="Parameter_4947" name="NSt" value="1"/>
+          <Constant key="Parameter_4944" name="GCN" value="1"/>
+          <Constant key="Parameter_4947" name="GDt" value="500"/>
+          <Constant key="Parameter_4946" name="NSt" value="1"/>
         </ListOfConstants>
         <KineticLaw function="Function_49" unitType="Default" scalingCompartment="CN=Root,Model=Budding yeast size control by increasing SBF concentration,Vector=Compartments[tV]">
           <ListOfCallParameters>
