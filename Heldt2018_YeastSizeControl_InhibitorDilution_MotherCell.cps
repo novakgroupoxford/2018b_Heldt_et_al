@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- generated with COPASI 4.24 (Build 197) (http://www.copasi.org) at 2019-03-25 15:18:02 UTC -->
+<!-- generated with COPASI 4.24 (Build 197) (http://www.copasi.org) at 2019-03-29 17:40:10 UTC -->
 <?oxygen RNGSchema="http://www.copasi.org/static/schema/CopasiML.rng" type="xml"?>
 <COPASI xmlns="http://www.copasi.org/static/schema" versionMajor="4" versionMinor="24" versionDevel="197" copasiSourcesModified="0">
   <ListOfFunctions>
@@ -325,7 +325,7 @@ Reaction scheme where the products are created from the reactants and the change
         <vCard:N>
           <rdf:Description>
             <vCard:Family>Heldt</vCard:Family>
-            <vCard:Given>Frank Stefa</vCard:Given>
+            <vCard:Given>Frank Stefan</vCard:Given>
           </rdf:Description>
         </vCard:N>
         <vCard:ORG>
@@ -3788,7 +3788,7 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
   </ListOfPlots>
   <GUI>
   </GUI>
-  <SBMLReference file="YeastSizeControl_InhibitorDilution.xml">
+  <SBMLReference file="Heldt2018_YeastSizeControl_InhibitorDilution_MotherCell.xml">
     <SBMLMap SBMLid="Activation_of_APC_C_Cdh1" COPASIkey="Reaction_18"/>
     <SBMLMap SBMLid="Activation_of_APC_Cdc20" COPASIkey="Reaction_16"/>
     <SBMLMap SBMLid="Association_dissociation_of_SBF_and_Whi5" COPASIkey="Reaction_5"/>
@@ -3806,6 +3806,7 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
     <SBMLMap SBMLid="Degradation_of_Cln3" COPASIkey="Reaction_4"/>
     <SBMLMap SBMLid="Dephosphorylation_of_SBF" COPASIkey="Reaction_8"/>
     <SBMLMap SBMLid="Dephosphorylation_of_Whi5" COPASIkey="Reaction_13"/>
+    <SBMLMap SBMLid="Division" COPASIkey="Event_1"/>
     <SBMLMap SBMLid="Expression_of_size_dependent_gene" COPASIkey="Function_40"/>
     <SBMLMap SBMLid="GCN" COPASIkey="ModelValue_1"/>
     <SBMLMap SBMLid="GCt" COPASIkey="ModelValue_3"/>
@@ -3828,6 +3829,7 @@ Note that SBFp and SBFu are treated independently from the other SBF-related var
     <SBMLMap SBMLid="SBFp" COPASIkey="Metabolite_14"/>
     <SBMLMap SBMLid="SBFt" COPASIkey="Metabolite_12"/>
     <SBMLMap SBMLid="SBFu" COPASIkey="Metabolite_13"/>
+    <SBMLMap SBMLid="Start" COPASIkey="Event_0"/>
     <SBMLMap SBMLid="StartThr" COPASIkey="ModelValue_4"/>
     <SBMLMap SBMLid="Synthesis_of_Cdc20" COPASIkey="Reaction_15"/>
     <SBMLMap SBMLid="Synthesis_of_Cdh1" COPASIkey="Reaction_14"/>

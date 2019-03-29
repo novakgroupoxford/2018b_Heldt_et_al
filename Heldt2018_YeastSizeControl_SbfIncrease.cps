@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- generated with COPASI 4.24 (Build 197) (http://www.copasi.org) at 2019-03-25 15:18:17 UTC -->
+<!-- generated with COPASI 4.24 (Build 197) (http://www.copasi.org) at 2019-03-29 17:40:33 UTC -->
 <?oxygen RNGSchema="http://www.copasi.org/static/schema/CopasiML.rng" type="xml"?>
 <COPASI xmlns="http://www.copasi.org/static/schema" versionMajor="4" versionMinor="24" versionDevel="197" copasiSourcesModified="0">
   <ListOfFunctions>
@@ -301,7 +301,7 @@ Reaction scheme where the products are created from the reactants and the change
         <vCard:N>
           <rdf:Description>
             <vCard:Family>Heldt</vCard:Family>
-            <vCard:Given>Frank Stefa</vCard:Given>
+            <vCard:Given>Frank Stefan</vCard:Given>
           </rdf:Description>
         </vCard:N>
         <vCard:ORG>
@@ -3050,10 +3050,10 @@ The size of a cell sets the scale for all biochemical processes within it, there
           <Modifier metabolite="Metabolite_16" stoichiometry="1"/>
         </ListOfModifiers>
         <ListOfConstants>
-          <Constant key="Parameter_4948" name="kSyCln" value="8"/>
-          <Constant key="Parameter_4944" name="GCN" value="1"/>
+          <Constant key="Parameter_4946" name="kSyCln" value="8"/>
+          <Constant key="Parameter_4948" name="GCN" value="1"/>
           <Constant key="Parameter_4947" name="GDt" value="500"/>
-          <Constant key="Parameter_4946" name="NSt" value="1"/>
+          <Constant key="Parameter_4945" name="NSt" value="1"/>
         </ListOfConstants>
         <KineticLaw function="Function_49" unitType="Default" scalingCompartment="CN=Root,Model=Budding yeast size control by increasing SBF concentration,Vector=Compartments[tV]">
           <ListOfCallParameters>

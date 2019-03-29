@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- generated with COPASI 4.24 (Build 197) (http://www.copasi.org) at 2019-03-25 15:18:29 UTC -->
+<!-- generated with COPASI 4.24 (Build 197) (http://www.copasi.org) at 2019-03-29 17:40:59 UTC -->
 <?oxygen RNGSchema="http://www.copasi.org/static/schema/CopasiML.rng" type="xml"?>
 <COPASI xmlns="http://www.copasi.org/static/schema" versionMajor="4" versionMinor="24" versionDevel="197" copasiSourcesModified="0">
   <ListOfFunctions>
@@ -344,7 +344,7 @@ Reaction scheme where the products are created from the reactants and the change
         <vCard:N>
           <rdf:Description>
             <vCard:Family>Heldt</vCard:Family>
-            <vCard:Given>Frank Stefa</vCard:Given>
+            <vCard:Given>Frank Stefan</vCard:Given>
           </rdf:Description>
         </vCard:N>
         <vCard:ORG>
